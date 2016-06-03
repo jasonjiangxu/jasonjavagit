@@ -8,6 +8,10 @@ import com.centaline.core.model.BaseEntity;
  *
  */
 public class TCategory extends BaseEntity{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3957097446364402046L;
 	/* ���� ����/֧��   */
 	private String type;
 	/* ������*/

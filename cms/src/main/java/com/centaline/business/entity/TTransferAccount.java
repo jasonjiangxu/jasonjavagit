@@ -10,6 +10,10 @@ import com.centaline.core.model.BaseEntity;
  *
  */
 public class TTransferAccount extends BaseEntity {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -9080030814903981718L;
 	/* ת������   */
 	private Date transferDate;
 	/* ת�����  */

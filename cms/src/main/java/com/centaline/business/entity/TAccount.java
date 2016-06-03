@@ -8,6 +8,10 @@ import com.centaline.core.model.BaseEntity;
  *
  */
 public class TAccount extends BaseEntity {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1492354250539019816L;
 	/* �˻����   */
 	private String accountCode;
 	/* �˻����   */

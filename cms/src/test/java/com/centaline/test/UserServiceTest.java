@@ -5,7 +5,6 @@ import java.util.Date;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.centaline.core.web.GridJsonUtil;
 import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TUser;
 import com.centaline.sysmgr.service.UserService;

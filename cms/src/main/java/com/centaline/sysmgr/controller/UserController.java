@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.centaline.core.controller.BaseController;
 import com.centaline.core.web.AjaxResponse;
-import com.centaline.core.web.HqlWhereUtil;
 import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TConfig;
 import com.centaline.sysmgr.model.TUser;

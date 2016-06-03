@@ -11,6 +11,11 @@ import com.centaline.core.model.BaseEntity;
  */
 public class TIncomePayAccount extends BaseEntity{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -420980373745493946L;
+
 	/* �������� */
 	private Date recordDate;
 	

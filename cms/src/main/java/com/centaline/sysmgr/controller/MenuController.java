@@ -1,22 +1,11 @@
 package com.centaline.sysmgr.controller;
 
-import java.util.List;
-
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.centaline.core.controller.BaseController;
-import com.centaline.core.web.AjaxResponse;
-import com.centaline.core.web.PageUtil;
-import com.centaline.sysmgr.model.TConfig;
-import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
 /**

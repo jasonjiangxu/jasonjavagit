@@ -28,8 +28,8 @@ public class Test<T> {
 		tm.setBeginBirthDay("2015-12");
 		tm.setEndBirthDay("2016-01");
 		tm.setSex('1');
-		Test<TUser> t=new Test<TUser>();
-		String sql;
+		//Test<TUser> t=new Test<TUser>();
+		//String sql;
 		try {
 			/*HqlWhereUtil dl = t.createHqlByEntity(tm);
 			System.out.println(dl.getHql());

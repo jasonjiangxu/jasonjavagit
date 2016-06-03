@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>CMS系统</title>
+		<#include "headStyle.ftl">
+	</head>
+    <body  class="fixed-top">
+      <#include "navigation.ftl">
+      <!-- BEGIN CONTAINER -->
+	  <div id="container" class="row-fluid">
+	  	<!-- BEGIN SIDEBAR -->
+		<#include "menuLayout.ftl">
+		<!-- END SIDEBAR -->
+		<!-- BEGIN PAGE -->
+		<div id="main-content">
+     		 <!-- BEGIN PAGE CONTAINER-->
+			<div class="container-fluid">
+				<#include "containerTitle.ftl">
+				<!-- END PAGE HEADER-->
+				<!-- BEGIN PAGE CONTENT-->
+				${body}
+				<!-- END PAGE CONTENT-->
+			</div>
+      	</div>
+		<!-- END PAGE -->
+	  </div>
+	   <!-- END CONTAINER -->
+	   <#include "footer.ftl">
+	</body>
+</html>

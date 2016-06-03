@@ -1,0 +1,37 @@
+
+.cms-list{
+	background:url('icons/list.gif') no-repeat center center;
+}
+
+.cms-add{
+	background:url('icons/add.png') no-repeat center center;
+}
+
+.cms-close{
+	background:url('icons/close.png') no-repeat center center;
+}
+
+.cms-pencil{
+	background:url('icons/pencil.gif') no-repeat center center;
+}
+
+.cms-find{
+	background:url('icons/find.gif') no-repeat center center;
+}
+
+.cms-disk{
+	background:url('icons/disk.png') no-repeat center center;
+}
+
+.cms-ok{
+	background:url('icons/ok.gif') no-repeat center center;
+}
+.cms-no{
+	background:url('icons/no.gif') no-repeat center center;
+}
+.cms-edit{
+	background:url('icons/edit.gif') no-repeat center center;
+}
+.cms-recycle{
+	background:url('icons/recycle.gif') no-repeat center center;
+}

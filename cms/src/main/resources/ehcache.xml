@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<ehcache>  
+　<diskStore path="java.io.tmpdir"/>    
+　　<defaultCache maxElementsInMemory="10000"
+		eternal="false"
+		overflowToDisk="true"
+		timeToIdleSeconds="300"
+		timeToLiveSeconds="180"
+		diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120"/>
+	<!-- 指定区域cache：通过name指定，name对应到Hibernate中的区域名即可-->  
+  <cache name="cn.javass.h3test.model.UserModel"  
+                eternal="false"  
+                maxElementsInMemory="100"  
+                timeToIdleSeconds="1200"  
+                timeToLiveSeconds="1200"  
+                overflowToDisk="false">  
+  </cache>   
+</ehcache>

@@ -1,6 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
-encoding//src/main/java/com/centaline/core/enums=UTF-8
 encoding//src/main/java/com/centaline/core/model/BaseEntity.java=UTF-8
 encoding//src/main/java/com/centaline/core/model/BaseFKEntity.java=UTF-8
 encoding//src/main/java/com/centaline/core/web/PageUtil.java=UTF-8

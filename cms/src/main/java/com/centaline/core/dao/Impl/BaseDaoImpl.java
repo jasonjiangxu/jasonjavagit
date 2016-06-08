@@ -15,12 +15,12 @@ import org.springframework.orm.hibernate4.HibernateCallback;
 import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
 
 import com.centaline.core.dao.IBaseDao;
-import com.centaline.core.enums.QueryConditionEnum;
 import com.centaline.core.util.Common;
 import com.centaline.core.web.Condition;
 import com.centaline.core.web.HqlWhereUtil;
 import com.centaline.core.web.PageUtil;
 import com.centaline.core.web.Sort;
+import com.jx.utility.common_utility.enums.QueryConditionEnum;
 
 /**
  * 

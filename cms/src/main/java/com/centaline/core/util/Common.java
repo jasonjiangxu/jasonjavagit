@@ -8,8 +8,8 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 
-import com.centaline.core.enums.QueryConditionEnum;
 import com.centaline.core.web.Condition;
+import com.jx.utility.common_utility.enums.QueryConditionEnum;
 
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;

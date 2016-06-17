@@ -1,12 +1,8 @@
 package com.centaline.sysmgr.service.Impl;
 
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Service;
 
-import com.centaline.core.dao.IBaseDao;
 import com.centaline.core.service.BaseService;
-import com.centaline.core.web.HqlWhereUtil;
 import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TUser;
 import com.centaline.sysmgr.service.UserService;
@@ -22,12 +18,12 @@ import com.centaline.sysmgr.service.UserService;
 @Service("userService")
 public class UserServiceImpl extends BaseService<TUser> implements UserService {
 
-	@Resource(name = "baseDao") 
-	private IBaseDao<TUser> baseDao;
+	/*@Resource(name = "baseDao") 
+	private IBaseDao<TUser> baseDao;*/
 	
 	@Override
 	public PageUtil<TUser> findUser(Integer page, Integer rows, TUser tuser,String condition) {
-		tuser.setDelFlg('N');//标记为未删除
+		/*tuser.setDelFlg('N');//标记为未删除
 		HqlWhereUtil whereutil = null;
 		try {
 			whereutil = createHqlByEntity(tuser);
@@ -39,12 +35,13 @@ public class UserServiceImpl extends BaseService<TUser> implements UserService {
 		pageUser.setPage(page); //设置当前页
 		pageUser.setLimit(rows); //设置每页大小
 		PageUtil<TUser> userList= baseDao.selectPageListByHql(whereutil.getHql(), pageUser,whereutil.getObjParames());
-		return userList;
+		return userList;*/
+		return null;
 	}
 
 	@Override
 	public void saveTUser(TUser user) throws Exception {
-		baseDao.insertObject(user);
+		//baseDao.insertObject(user);
 	}
 
 	@Override

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.centaline.sysmgr.mapper.MenuMapper" >
+  <resultMap id="menuMap" type="com.centaline.sysmgr.model.TMenu" >
+     <id column="C_ID" property="id" jdbcType="VARCHAR" />
+     <result column="C_REMARK" property="remark" jdbcType="VARCHAR" />
+     <result column="C_CREATE_USER" property="createUser" jdbcType="VARCHAR" />
+     <result column="C_UPDATE_USER" property="updateUser" jdbcType="VARCHAR" />
+     <result column="C_CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+     <result column="C_UPDATE_TIME" property="updateTime" jdbcType="TIMESTAMP" />
+     
+     <result column="C_CODE" property="code" jdbcType="VARCHAR" />
+     <result column="C_NAME" property="name" jdbcType="VARCHAR" />
+     <result column="C_PARENT_CODE" property="parentCode" jdbcType="VARCHAR" />
+     <result column="C_LEVEL" property="level" jdbcType="BIGINT" />
+     <result column="C_URL" property="url" jdbcType="VARCHAR" />
+     <result column="C_ICON" property="icon" jdbcType="VARCHAR" />
+     <result column="C_SPELL" property="spell" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="columnlist" >
+    C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL
+  </sql>
+  <insert id="insert" parameterType="tmenu" >
+    insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL,C_SORT,C_DEL,C_VERSION)
+    values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{updateUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},
+    #{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},#{icon,jdbcType=VARCHAR},#{spell,jdbcType=VARCHAR},
+    #{sort,jdbcType=VARCHAR},#{delFlg,jdbcType=CHAR},#{version,jdbcType=BIGINT})
+  </insert>
+</mapper>

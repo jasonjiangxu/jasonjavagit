@@ -32,12 +32,14 @@
 	
 	<!-- 配置数据库 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-		<property name="url" value="${jdbc_url}"/>
-		<property name="username" value="${jdbc_username}"/>
-		<property name="password" value="${jdbc_password}"/>
+	
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/cms"/>
+		<property name="username" value="root"/>
+		<property name="password" value="111111"/>
 		
 		<!-- 初始化连接大小 -->
-		<property name="initialSize" value="0" />
+		<property name="initialSize" value="5" />
 		<!-- 连接池最大使用连接数量 -->
 		<property name="maxActive" value="20" />
 		<!-- 连接池最大空闲 -->
@@ -47,7 +49,7 @@
 		<!-- 获取连接最大等待时间 -->
 		<property name="maxWait" value="60000" />
 		
-		<property name="validationQuery" value="${validationQuery}" />
+		<property name="validationQuery" value="SELECT 1" />
 		<property name="testOnBorrow" value="false" />
 		<property name="testOnReturn" value="false" />
 		<property name="testWhileIdle" value="true" />
@@ -69,6 +71,7 @@
 	</bean>
 	
 	<!-- 配置hibernate session工厂 -->
+	<!-- 
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="hibernateProperties">
@@ -87,14 +90,34 @@
 			</list>
 		</property>
 	</bean>
+	 -->
 	
+	 <!-- MyBatis 配置 -->
+	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:mybatis-config.xml" />
+		<property name="mapperLocations" value="classpath:com/centaline/**/mapper/xml/*.xml" />
+	</bean>
+	
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.centaline.**.mapper" />
+		<property name="sqlSessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<!-- 
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
+	 -->
 	
 	<!-- 配置事物 -->
+	<!-- 
 	<bean name="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
 		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	 -->
+	 <bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
 	</bean>
 	
 	<!-- 事物处理规则 -->
@@ -138,8 +161,9 @@
         <property name="defaultEncoding" value="UTF-8"/>
         <property name="cacheSeconds" value="60"/>
     </bean>
-    
+    <!-- 
     <bean id="baseDao" class="com.centaline.core.dao.Impl.BaseDaoImpl">
     	<property name="hibernateTemplate" ref="hibernateTemplate"/>
     </bean>
+     -->
 </beans>

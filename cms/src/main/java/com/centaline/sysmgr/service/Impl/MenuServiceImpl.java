@@ -1,10 +1,7 @@
 package com.centaline.sysmgr.service.Impl;
 
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Service;
 
-import com.centaline.core.dao.IBaseDao;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
@@ -20,11 +17,11 @@ import com.centaline.sysmgr.service.MenuService;
 @Service("menuService") 
 public class MenuServiceImpl   implements MenuService {
 	
-	@Resource(name = "baseDao") 
-	private IBaseDao<TMenu> baseDao;
+	/*@Resource(name = "baseDao") 
+	private IBaseDao<TMenu> baseDao;*/
 	
 	public void saveMenu(TMenu menu) throws Exception{
-		baseDao.insertObject(menu);
+	//	baseDao.insertObject(menu);
 	}
 	
 }

@@ -10,7 +10,6 @@ import javax.persistence.Transient;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
-import com.centaline.core.defaultannotation.RelationColumn;
 import com.centaline.core.model.BaseEntity;
 import com.centaline.core.util.Common;
 
@@ -48,7 +47,6 @@ public class TUser extends BaseEntity{
 	private String code;
 	/* 生日 */
 	@Column(name="C_BIRTH_DAY")
-	@RelationColumn(beginColumn="getBeginBirthDay",endColumn="getEndBirthDay")
 	private Date birthDay;
 	/* 冗余条件字段 开始时间 不是数据库字段 */
 	@Transient

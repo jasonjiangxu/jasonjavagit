@@ -22,27 +22,6 @@ import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombi
  *
  */
 public class Common {
-	/**
-	 * 
-	 * @Title: firstCharUpperCase 
-	 * @Description: TODO(字符串首字母大写) 
-	 * @param @param str
-	 * @param @return    设定文件 
-	 * @return String    返回类型 
-	 * @throws 
-	 *
-	 * @author 姜旭(JasonJiang)
-	 * @date 2015年7月27日 上午8:57:04
-	 *
-	 */
-	public static String firstCharUpperCase(String str){
-		String returnstr=Constant.EMPTY;
-		if(!isEmptStr(str)){
-			String first=str.substring(0,1);
-			returnstr=str.replaceFirst(first, first.toUpperCase());
-		}
-		return returnstr;
-	}
 	
 	/**
 	 * 
@@ -224,35 +203,11 @@ public class Common {
 		return (list!=null && list.size()>0);
 	}
 	
-	
 	/**
 	 * 
-	 * @param property 哪些列需要加入这个条件
-	 * @param c
+	 * @param list
+	 * @return
 	 */
-	public static String orCondition(String condition,String[] property){
-		String result="";
-		if(property!=null && property.length>0){
-			if(!isEmptStr(condition)){
-				result+="(";
-				int index=0;
-				String[] condis=condition.split(",");
-				for(String p:property){
-					for(String c:condis){
-						if(index>0){
-							result+=" OR ";
-						}
-						result+=(p+"='"+c+"'");
-						index++;
-					}
-				}
-				result+=")";
-			}
-		}
-		return result;
-	}
-	
-	
 	public static Object[] listToArray(List<Object> list){
 		return (list!=null && list.size()>0)?list.toArray(new Object[list.size()]):new Object[0];
 	}

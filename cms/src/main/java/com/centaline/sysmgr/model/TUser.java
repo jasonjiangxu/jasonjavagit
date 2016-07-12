@@ -11,7 +11,7 @@ import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import com.centaline.core.model.BaseEntity;
-import com.centaline.core.util.Common;
+import com.jx.utility.common_utility.util.Common;
 
 import net.sf.json.JSONObject;
 

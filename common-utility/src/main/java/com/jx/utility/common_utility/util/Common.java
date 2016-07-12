@@ -5,7 +5,12 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
-import com.jx.utility.common_utility.enums.QueryConditionEnum;
+import net.sourceforge.pinyin4j.PinyinHelper;
+import net.sourceforge.pinyin4j.format.HanyuPinyinCaseType;
+import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;
+import net.sourceforge.pinyin4j.format.HanyuPinyinToneType;
+import net.sourceforge.pinyin4j.format.HanyuPinyinVCharType;
+import net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination;
 
 
 /**
@@ -219,46 +224,6 @@ public class Common {
 		return (list!=null && list.size()>0);
 	}
 	
-	/**
-	 * 
-	 * @Title: addCondition 
-	 * @Description: TODO(添加条件) 
-	 * @param @param cri
-	 * @param @param c    设定文件 
-	 * @return void    返回类型 
-	 * @throws 
-	 *
-	 * @author 姜旭(JasonJiang)
-	 * @date 2015年8月15日 下午5:21:49
-	 *
-	 */
-	public static void addCondition(Criteria cri,Condition c){
-		if(QueryConditionEnum.LIKE.getCode().equals(c.getQueryWay())){// like
-			cri.add(Restrictions.like(c.getProperty(), "%"+c.getValue()+"%"));
-		}if(QueryConditionEnum.LIKESTART.getCode().equals(c.getQueryWay())){// like
-			cri.add(Restrictions.like(c.getProperty(), c.getValue()+"%"));
-		}if(QueryConditionEnum.LIKEEND.getCode().equals(c.getQueryWay())){// like
-			cri.add(Restrictions.like(c.getProperty(), "%"+c.getValue()));
-		}else if(QueryConditionEnum.EQ.getCode().equals(c.getQueryWay())){//=
-			cri.add(Restrictions.eq(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.NOTEQ.getCode().equals(c.getQueryWay())){//<>
-			cri.add(Restrictions.ne(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.LT.getCode().equals(c.getQueryWay())){//<
-			cri.add(Restrictions.lt(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.GT.getCode().equals(c.getQueryWay())){//>
-			cri.add(Restrictions.gt(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.LTE.getCode().equals(c.getQueryWay())){//<=
-			cri.add(Restrictions.le(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.GTE.getCode().equals(c.getQueryWay())){//>=
-			cri.add(Restrictions.ge(c.getProperty(), c.getValue()));
-		}else if(QueryConditionEnum.IN.getCode().equals(c.getQueryWay())){//>=
-			cri.add(Restrictions.in(c.getProperty(), c.getValues()));// in
-		}else if(QueryConditionEnum.ISNOTNULL.getCode().equals(c.getQueryWay())){//not null
-			cri.add(Restrictions.isNotNull(c.getProperty()));
-		}else if(QueryConditionEnum.ISNULL.getCode().equals(c.getQueryWay())){//not null
-			cri.add(Restrictions.isNull(c.getProperty()));
-		}
-	}
 	
 	/**
 	 * 
@@ -287,46 +252,6 @@ public class Common {
 		return result;
 	}
 	
-	public static String andCondition(Condition c){
-		String com=(c.getValue() instanceof String)?Constant.SPLIT:"";
-		String str=Constant.EMPTY;
-		if(QueryConditionEnum.LIKE.getCode().equals(c.getQueryWay())){// like
-			str+=c.getProperty()+" "+QueryConditionEnum.LIKE.getName()+" '%"+c.getValue()+"%'";
-		}if(QueryConditionEnum.LIKESTART.getCode().equals(c.getQueryWay())){// like
-			str+=c.getProperty()+" "+QueryConditionEnum.LIKE.getName()+" '"+c.getValue()+"%'";
-		}if(QueryConditionEnum.LIKEEND.getCode().equals(c.getQueryWay())){// like
-			str+=c.getProperty()+" "+QueryConditionEnum.LIKE.getName()+" '%"+c.getValue()+"'";
-		}else if(QueryConditionEnum.EQ.getCode().equals(c.getQueryWay())){//=
-			str+=c.getProperty()+QueryConditionEnum.EQ.getName()+com+c.getValue()+com;
-		}else if(QueryConditionEnum.NOTEQ.getCode().equals(c.getQueryWay())){//<>
-			str+=c.getProperty()+QueryConditionEnum.NOTEQ.getName()+com+c.getValue()+com;
-		}else if(QueryConditionEnum.LT.getCode().equals(c.getQueryWay())){//<
-			str+=c.getProperty()+QueryConditionEnum.LT.getName()+c.getValue();
-		}else if(QueryConditionEnum.GT.getCode().equals(c.getQueryWay())){//>
-			str+=c.getProperty()+QueryConditionEnum.GT.getName()+c.getValue();
-		}else if(QueryConditionEnum.LTE.getCode().equals(c.getQueryWay())){//<=
-			str+=c.getProperty()+QueryConditionEnum.LTE.getName()+c.getValue();
-		}else if(QueryConditionEnum.GTE.getCode().equals(c.getQueryWay())){//>=
-			str+=c.getProperty()+QueryConditionEnum.GTE.getName()+c.getValue();
-		}else if(QueryConditionEnum.IN.getCode().equals(c.getQueryWay())){//IN
-			str+=c.getProperty()+QueryConditionEnum.IN.getName()+"(";
-			int i=0;
-			for(Object v:c.getValues()){
-				com=(v instanceof String)?Constant.SPLIT:"";
-				if(i>0){
-					str+=Constant.COMMA;
-				}
-				str+=com+v+com;
-				i++;
-			}
-			str+=")";
-		}else if(QueryConditionEnum.ISNOTNULL.getCode().equals(c.getQueryWay())){//not null
-			str+=c.getProperty()+" "+QueryConditionEnum.ISNOTNULL.getName();
-		}else if(QueryConditionEnum.ISNULL.getCode().equals(c.getQueryWay())){//not null
-			str+=c.getProperty()+" "+QueryConditionEnum.ISNULL.getName();
-		}
-		return str;
-	}
 	
 	public static Object[] listToArray(List<Object> list){
 		return (list!=null && list.size()>0)?list.toArray(new Object[list.size()]):new Object[0];

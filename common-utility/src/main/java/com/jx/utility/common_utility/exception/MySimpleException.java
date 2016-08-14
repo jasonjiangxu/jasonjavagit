@@ -12,6 +12,8 @@ package com.jx.utility.common_utility.exception;
 public class MySimpleException extends Exception {
 
 	private static final long serialVersionUID = -2725745334499315555L;
+	   
+	
 	
 	
 }

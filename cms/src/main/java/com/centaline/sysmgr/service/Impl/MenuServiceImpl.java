@@ -2,6 +2,7 @@ package com.centaline.sysmgr.service.Impl;
 
 import org.springframework.stereotype.Service;
 
+import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
@@ -22,6 +23,12 @@ public class MenuServiceImpl   implements MenuService {
 	
 	public void saveMenu(TMenu menu) throws Exception{
 	//	baseDao.insertObject(menu);
+	}
+
+	@Override
+	public PageUtil<TMenu> findMenusByPage(Integer page, Integer rows, String[] condis, TMenu tm) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

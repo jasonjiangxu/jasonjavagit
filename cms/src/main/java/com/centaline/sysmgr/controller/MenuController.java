@@ -1,11 +1,17 @@
 package com.centaline.sysmgr.controller;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.centaline.core.controller.BaseController;
+import com.centaline.core.web.PageUtil;
+import com.centaline.sysmgr.model.TConfig;
+import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
 /**
@@ -24,21 +30,13 @@ public class MenuController extends BaseController{
 	private MenuService menuService;
 	
 	/**
-	 * 
-	 * @Title: menulist 
-	 * @Description: TODO(跳转到分页页面) 
-	 * @param @param model
-	 * @param @param currentpage
-	 * @param @return
-	 * @param @throws Exception    设定文件 
-	 * @return String    返回类型 
-	 * @throws 
-	 *
-	 * @author 姜旭(JasonJiang)
-	 * @date 2015年7月1日 上午9:12:10
-	 *
+	 * 跳转到分页页面
+	 * @param model
+	 * @param request
+	 * @return
+	 * @throws Exception
 	 */
-	/*@RequestMapping(value = "menulist")
+	@RequestMapping(value = "menulist")
 	public String menulist(Model model,HttpServletRequest request) throws Exception {
 		TConfig config=new TConfig();
 		config.setMaintitle("菜单管理");
@@ -47,37 +45,30 @@ public class MenuController extends BaseController{
 		config.setPosiurl(request.getContextPath()+"/menu/menulist");
 		model.addAttribute("config", config);
 		return "sysmgr/menulist";
-	}*/
+	}
 	/**
-	 * 
-	 * @Title: findMenuList 
-	 * @Description: TODO(分页查询) 
-	 * @param @param model
-	 * @param @param page
-	 * @param @param rows
-	 * @param @return
-	 * @param @throws Exception    设定文件 
-	 * @return PageUtil<TMenu>    返回类型 
-	 * @throws 
-	 *
-	 * @author 姜旭(JasonJiang)
-	 * @date 2015年7月14日 下午7:29:56
-	 *
+	 * 分页查询
+	 * @param model
+	 * @param page
+	 * @param rows
+	 * @param tm
+	 * @param condition
+	 * @return
+	 * @throws Exception
 	 */
-	/*@RequestMapping(value = "findMenuList")
+	@RequestMapping(value = "findMenuList")
 	@ResponseBody
 	public PageUtil<TMenu> findMenuList(Model model,Integer page,Integer rows,TMenu tm,String condition) throws Exception {
-		page=page==null?1:page;
-		rows=rows==null?NUM_DEFAULT_PAGE:rows;
+	/*	page=page==null?1:page;
+		rows=rows==null?PageUtil.NUM_DEFAULT_PAGE:rows;*/
 		String[] condis=null;
 		if(condition!=null && !"".equals(condition)){
 			condis=condition.split(",");
 		}
-		PageUtil<TMenu> menulist=menuService.findByPage(page, rows, condis, tm);
+		PageUtil<TMenu> menulist=menuService.findMenusByPage(page, rows, condis, tm);
 		return menulist;
-		return null;
 	}
-	*/
+	
 	/**
 	 * 
 	 * @Title: findAllParentMenu 

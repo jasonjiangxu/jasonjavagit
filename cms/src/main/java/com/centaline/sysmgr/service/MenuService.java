@@ -1,5 +1,6 @@
 package com.centaline.sysmgr.service;
 
+import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TMenu;
 
 /**
@@ -18,4 +19,5 @@ public interface MenuService{
 	 */
 	public void saveMenu(TMenu menu) throws Exception;
 
+	public PageUtil<TMenu> findMenusByPage(Integer page, Integer rows, String[] condis, TMenu tm);
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.centaline.sysmgr.mapper.MenuMapper" >
-  <resultMap id="menuMap" type="com.centaline.sysmgr.model.TMenu" >
+  <resultMap id="menuMap" type="tmenu" >
      <id column="C_ID" property="id" jdbcType="VARCHAR" />
      <result column="C_REMARK" property="remark" jdbcType="VARCHAR" />
      <result column="C_CREATE_USER" property="createUser" jdbcType="VARCHAR" />
@@ -20,7 +20,7 @@
   <sql id="columnlist" >
     C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL
   </sql>
-  <insert id="insertMenu" parameterType="com.centaline.sysmgr.model.TMenu">
+  <insert id="insertMenu" parameterType="tmenu">
     insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_DEL,C_VERSION,C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SORT,C_SPELL)
     values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{updateUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},
     #{delFlg,jdbcType=CHAR},#{version,jdbcType=BIGINT},#{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},

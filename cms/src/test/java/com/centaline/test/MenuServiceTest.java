@@ -12,7 +12,6 @@ import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
 import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 
 /**
  * 菜单service层测试例子

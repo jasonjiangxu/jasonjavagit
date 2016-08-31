@@ -1,8 +1,12 @@
 package com.centaline.sysmgr.service.Impl;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.centaline.core.web.PageUtil;
+import com.centaline.sysmgr.mapper.MenuMapper;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
 
@@ -18,17 +22,30 @@ import com.centaline.sysmgr.service.MenuService;
 @Service("menuService") 
 public class MenuServiceImpl   implements MenuService {
 	
-	/*@Resource(name = "baseDao") 
-	private IBaseDao<TMenu> baseDao;*/
+	@Autowired
+	private MenuMapper menuMapper;
 	
+	@Override
 	public void saveMenu(TMenu menu) throws Exception{
-	//	baseDao.insertObject(menu);
+		menuMapper.insertMenu(menu);
 	}
 
 	@Override
 	public PageUtil<TMenu> findMenusByPage(Integer page, Integer rows, String[] condis, TMenu tm) {
-		// TODO Auto-generated method stub
-		return null;
+		//构造分页对象
+		PageUtil<TMenu> pageUser=new PageUtil<TMenu>();
+		pageUser.setPage(page); //设置当前页
+		pageUser.setLimit(rows); //设置每页大小
+		List<TMenu> menus=menuMapper.findMenusByPage(page, rows, condis, tm);
+		pageUser.setRows(menus);
+		return pageUser;
+	}
+	
+	public MenuMapper getMenuMapper() {
+		return menuMapper;
+	}
+	public void setMenuMapper(MenuMapper menuMapper) {
+		this.menuMapper = menuMapper;
 	}
 	
 }

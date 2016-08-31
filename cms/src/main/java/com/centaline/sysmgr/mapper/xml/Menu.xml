@@ -16,14 +16,20 @@
      <result column="C_URL" property="url" jdbcType="VARCHAR" />
      <result column="C_ICON" property="icon" jdbcType="VARCHAR" />
      <result column="C_SPELL" property="spell" jdbcType="VARCHAR" />
-  </resultMap>
+  </resultMap> 
   <sql id="columnlist" >
     C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL
   </sql>
-  <insert id="insert" parameterType="tmenu" >
-    insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL,C_SORT,C_DEL,C_VERSION)
+  <insert id="insertMenu" parameterType="com.centaline.sysmgr.model.TMenu">
+    insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_DEL,C_VERSION,C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SORT,C_SPELL)
     values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{updateUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},
-    #{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},#{icon,jdbcType=VARCHAR},#{spell,jdbcType=VARCHAR},
-    #{sort,jdbcType=VARCHAR},#{delFlg,jdbcType=CHAR},#{version,jdbcType=BIGINT})
+    #{delFlg,jdbcType=CHAR},#{version,jdbcType=BIGINT},#{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},
+    #{icon,jdbcType=VARCHAR},#{sort,jdbcType=VARCHAR},#{spell,jdbcType=VARCHAR})
   </insert>
+  
+  <select id="findMenusByPage" resultMap="menuMap">
+  	<![CDATA[]]>
+  		select  <include refid="columnlist"/> 
+  		from t_menu where C_DEL='N'
+  </select>
 </mapper>

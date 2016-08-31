@@ -1,14 +1,18 @@
 package com.centaline.test;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
-import javax.annotation.Resource;
-
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 
 /**
  * 菜单service层测试例子
@@ -16,7 +20,8 @@ import com.centaline.sysmgr.service.MenuService;
  *
  */
 public class MenuServiceTest extends  JUnitBaseService{
-	@Resource(name = "menuService") 
+	
+	@Autowired
 	private MenuService menuService;
 	
 	/**
@@ -27,7 +32,7 @@ public class MenuServiceTest extends  JUnitBaseService{
 		TMenu tm=new TMenu();
 		tm.setId(UUID.randomUUID().toString());
 		tm.setCode("00002");
-		tm.setName("4444");
+		tm.setName("姜旭");
 		tm.setParentCode("0");
 		tm.setUrl("http://www.baidu.com");
 		tm.setIcon("icom");
@@ -35,6 +40,9 @@ public class MenuServiceTest extends  JUnitBaseService{
 		tm.setCreateUser("admin");
 		tm.setCreateTime(new Date());
 		tm.setLevel(1);
+		tm.setDelFlg('N');
+		tm.setVersion(0);
+		
 		try {
 			long start1=System.currentTimeMillis();
 			menuService.saveMenu(tm);
@@ -45,6 +53,15 @@ public class MenuServiceTest extends  JUnitBaseService{
 			System.out.println("插入失败");
 			e.printStackTrace();
 		}
+	}
+	
+	
+	@Test
+	public void testFindService() {
+		PageUtil<TMenu> mu=menuService.findMenusByPage(0, 10, null, null);
+		List<TMenu> ms=mu.getRows();
+		JSONArray jar=JSONArray.fromObject(ms);
+		System.out.println(jar.toString());
 	}
 
 }

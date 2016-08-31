@@ -19,7 +19,7 @@
 	<description>全局配置，跟平台和部署无关</description>
 	
 	<!-- 自动注入 -->
-	<context:component-scan base-package="com.centaline.core.dao,com.centaline.**.service"/>
+	<context:component-scan base-package="com.centaline.**.mapper,com.centaline.**.service"/>
 	
 	<!-- 加载属性配置文件 -->
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -96,7 +96,7 @@
 	<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="configLocation" value="classpath:mybatis-config.xml" />
-		<property name="mapperLocations" value="classpath:com/centaline/**/mapper/xml/*.xml" />
+		<property name="mapperLocations" value="classpath*:com/centaline/**/mapper/xml/*.xml" />
 	</bean>
 	
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
@@ -138,7 +138,7 @@
 	 	<aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice"/>
 	 </aop:config>
 	 
-	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<tx:annotation-driven transaction-manager="transactionManager"  proxy-target-class="true" />
 	
 	<!-- BEGIN 配置_Druid和Spring关联监控配置 -->
 	<!-- 

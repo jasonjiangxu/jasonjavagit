@@ -32,11 +32,23 @@ public abstract class BaseEntity implements Serializable {
 	/* 版本控制 */
 	private Integer version;
 	
+	/* 新版本控制  UPDATE的时候赋值使用*/
+	private Integer newversion;
+	
 	/* 冗余条件字段 开始时间 不是数据库字段 */
 	private String beginDate;
 	/* 冗余条件字段 结束时间 不是数据库字段 */
 	private String endDate;
 	
+	
+	public Integer getNewversion() {
+		return newversion;
+	}
+
+	public void setNewversion(Integer newversion) {
+		this.newversion = newversion;
+	}
+
 	public String getBeginDate() {
 		return beginDate;
 	}

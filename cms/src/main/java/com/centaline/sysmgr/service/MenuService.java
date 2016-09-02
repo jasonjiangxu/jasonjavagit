@@ -17,7 +17,7 @@ public interface MenuService{
 	 * 保存按钮
 	 * @return
 	 */
-	public void saveMenu(TMenu menu) throws Exception;
+	public int saveMenu(TMenu menu) throws Exception;
 
 	public PageUtil<TMenu> findMenusByPage(Integer page, Integer rows, String[] condis, TMenu tm);
 }

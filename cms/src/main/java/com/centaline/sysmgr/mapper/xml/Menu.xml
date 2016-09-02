@@ -8,6 +8,7 @@
      <result column="C_UPDATE_USER" property="updateUser" jdbcType="VARCHAR" />
      <result column="C_CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
      <result column="C_UPDATE_TIME" property="updateTime" jdbcType="TIMESTAMP" />
+     <result column="C_VERSION" property="version" jdbcType="BIGINT" />
      
      <result column="C_CODE" property="code" jdbcType="VARCHAR" />
      <result column="C_NAME" property="name" jdbcType="VARCHAR" />
@@ -16,20 +17,50 @@
      <result column="C_URL" property="url" jdbcType="VARCHAR" />
      <result column="C_ICON" property="icon" jdbcType="VARCHAR" />
      <result column="C_SPELL" property="spell" jdbcType="VARCHAR" />
+     <result column="C_SORT" property="sort" jdbcType="BIGINT" />
   </resultMap> 
+  
   <sql id="columnlist" >
-    C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL
+    C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME,C_VERSION, C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SPELL,C_SORT
   </sql>
+  
+  <!-- 保存菜单 -->
   <insert id="insertMenu" parameterType="tmenu">
-    insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME, C_DEL,C_VERSION,C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SORT,C_SPELL)
-    values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{updateUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{updateTime,jdbcType=TIMESTAMP},
-    #{delFlg,jdbcType=CHAR},#{version,jdbcType=BIGINT},#{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},
+  	<![CDATA[
+    insert into T_MENU (C_ID,C_REMARK,C_CREATE_USER, C_CREATE_TIME, C_DEL,C_VERSION,C_CODE,C_NAME,C_PARENT_CODE,C_LEVEL,C_URL,C_ICON,C_SORT,C_SPELL)
+    values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},#{delFlg,jdbcType=CHAR},1,
+    #{code,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{parentCode,jdbcType=VARCHAR},#{level,jdbcType=BIGINT},#{url,jdbcType=VARCHAR},
     #{icon,jdbcType=VARCHAR},#{sort,jdbcType=VARCHAR},#{spell,jdbcType=VARCHAR})
+    ]]>
   </insert>
   
+  <!-- 更新菜单 -->
+  <update id="updateMenu" parameterType="tmenu">
+  	 update T_MENU
+  	 <set>
+  	 	<if test="remark!=null">C_REMARK = #{remark,jdbcType=VARCHAR},</if>
+  	 	<if test="delFlg!=null">C_DEL = #{delFlg,jdbcType=CHAR},</if>
+  	 	<if test="code!=null">C_CODE = #{code,jdbcType=VARCHAR},</if>
+  	 	<if test="name!=null">C_NAME = #{name,jdbcType=VARCHAR},</if>
+  	 	<if test="parentCode!=null">C_PARENT_CODE = #{parentCode,jdbcType=VARCHAR},</if>
+  	 	<if test="level!=null">C_LEVEL = #{level,jdbcType=BIGINT},</if>
+  	 	<if test="url!=null">C_URL = #{url,jdbcType=VARCHAR},</if>
+  	 	<if test="icon!=null">C_ICON =  #{icon,jdbcType=VARCHAR},</if>
+  	 	<if test="sort!=null">C_SORT = #{sort,jdbcType=VARCHAR},</if>
+  	 	<if test="spell!=null">C_SPELL = #{spell,jdbcType=VARCHAR},</if>
+  	 	C_VERSION = #{newversion,jdbcType=BIGINT},
+  	 	C_UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+  	 	C_UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+  	 </set>
+  	<where>
+  		C_ID=#{id,jdbcType=VARCHAR} and C_VERSION=#{version,jdbcType=BIGINT}
+  	</where>
+  </update>
+  
+   <!-- 查询菜单 -->
   <select id="findMenusByPage" resultMap="menuMap">
-  	<![CDATA[]]>
   		select  <include refid="columnlist"/> 
   		from t_menu where C_DEL='N'
   </select>
+  
 </mapper>

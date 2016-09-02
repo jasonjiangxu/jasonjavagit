@@ -26,8 +26,12 @@ public class MenuServiceImpl   implements MenuService {
 	private MenuMapper menuMapper;
 	
 	@Override
-	public void saveMenu(TMenu menu) throws Exception{
-		menuMapper.insertMenu(menu);
+	public int saveMenu(TMenu menu) throws Exception{
+		int row=menuMapper.insertMenu(menu);
+		if(row<=0){
+			throw new Exception("录入数据失败!");
+		}
+		return row;
 	}
 
 	@Override

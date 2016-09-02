@@ -40,17 +40,11 @@ public class MenuServiceTest extends  JUnitBaseService{
 		tm.setCreateTime(new Date());
 		tm.setLevel(1);
 		tm.setDelFlg('N');
-		tm.setVersion(0);
 		
 		try {
-			long start1=System.currentTimeMillis();
 			menuService.saveMenu(tm);
-			long start2=System.currentTimeMillis();
-			System.out.println("自动保存一条数据时间："+(start2-start1)+"毫秒,保存数据主键："+tm.getId());
-			
 		} catch (Exception e) {
-			System.out.println("插入失败");
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 	

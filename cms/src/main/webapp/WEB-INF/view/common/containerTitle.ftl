@@ -16,10 +16,6 @@
                         </div>
                         <!-- END THEME CUSTOMIZER-->
 						<!-- BEGIN PAGE TITLE & BREADCRUMB-->				    			
-						<h3 class="page-title">
-							${config?if_exists.maintitle?default('')}
-							<small>${config?if_exists.subtitle?default('')}</small>
-						</h3>
                         <ul class="breadcrumb">
                             <li>
                                 <a href="${base}/index"><i class="icon-home"></i></a><span class="divider">&nbsp;</span>

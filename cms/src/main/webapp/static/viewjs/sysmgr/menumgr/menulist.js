@@ -32,15 +32,15 @@ jQuery(document).ready(function() {
 		title:'菜单表格',
 		striped:true,//显示条纹
 		idField:'id',
+		treeField: 'name',
 		loadMsg:'数据加载中....',
 		iconCls:'cms-list',
 		pagination:true,//分页
 		rownumbers:true,//行数
 		collapsible:true,//是否可折叠的
 		columns:[[
-		     {field:'id',checkbox:true },
-             {field:'code',title:'菜单编码',width:100},
              {field:'name',title:'菜单名称',width:100},
+             {field:'code',title:'菜单编码',width:100},
              {field:'parentCode',title:'上级菜单',width:100},
              {field:'level',title:'菜单级别',width:30},
              {field:'url',title:'URL地址',width:100},
@@ -48,9 +48,6 @@ jQuery(document).ready(function() {
              {field:'sort',title:'排序',width:30},
              {field:'remark',title:'备注',width:100}
 		]],
-		pageNumber:1,
-		pageSize:20,
-		pageList:[10,20,30,40,50],
 		toolbar:tool,
 		queryParams:{
 			delFlg:'N'

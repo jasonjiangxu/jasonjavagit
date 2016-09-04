@@ -1,5 +1,7 @@
 package com.centaline.sysmgr.model;
 
+import java.util.List;
+
 import com.centaline.core.model.BaseEntity;
 import com.jx.utility.common_utility.util.Common;
 
@@ -31,11 +33,21 @@ public class TMenu extends BaseEntity{
 	/* 菜单拼音  */
 	private String spell;
 	
+	private List<TMenu> children;
+	
 	@Override
 	public String toString() {
 		return super.toString();
 	}
 	
+	public List<TMenu> getChildren() {
+		return children;
+	}
+
+	public void setChildren(List<TMenu> children) {
+		this.children = children;
+	}
+
 	public String getCode() {
 		return code;
 	}

@@ -58,7 +58,7 @@ public class MenuController extends BaseController{
 	 */
 	@RequestMapping(value = "findMenuList")
 	@ResponseBody
-	public PageUtil<TMenu> findMenuList(Model model,Integer page,Integer rows,TMenu tm,String condition) throws Exception {
+	public String findMenuList(Model model,Integer page,Integer rows,TMenu tm,String condition) throws Exception {
 	/*	page=page==null?1:page;
 		rows=rows==null?PageUtil.NUM_DEFAULT_PAGE:rows;*/
 		String[] condis=null;
@@ -66,7 +66,12 @@ public class MenuController extends BaseController{
 			condis=condition.split(",");
 		}
 		PageUtil<TMenu> menulist=menuService.findMenusByPage(page, rows, condis, tm);
-		return menulist;
+		String re="{\"total\":7,\"rows\":[{\"id\":1,\"name\":\"All Tasks\",\"parentCode\":\"3/4/2010\",\"level\":\"3/20/2010\",\"progress\":60,\"iconCls\":\"icon-ok\"},"
+				+"{\"id\":2,\"name\":\"Designing\",\"begin\":\"3/4/2010\",\"end\":\"3/10/2010\",\"progress\":100,\"_parentId\":1,\"state\":\"closed\"},"
+				+ "{\"id\":21,\"name\":\"Database\",\"persons\":2,\"parentCode\":\"3/4/2010\",\"level\":\"3/6/2010\",\"progress\":100,\"_parentId\":2},"
+				+ "{\"id\":22,\"name\":\"UML\",\"persons\":1,\"parentCode\":\"3/7/2010\",\"level\":\"3/8/2010\",\"progress\":100,\"_parentId\":2}],\"footer\":["
+				+ "{\"name\":\"Total Persons:\",\"persons\":7,\"iconCls\":\"icon-sum\"}]}";
+		return re;
 	}
 	
 	/**

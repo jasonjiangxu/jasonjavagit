@@ -15,63 +15,44 @@
             <ul class="sidebar-menu">
                 <li class="has-sub">
                     <a href="javascript:;" class="">
-                        <span class="icon-box"> <i class="icon-home"></i></span>我的理财
+                        <span class="icon-box"> <i class="icon-user"></i></span>客户管理
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li class="active"><a class="" href="index_2.html">收入记账</a></li>
-                        <li><a class="" href="index.html">支出记账</a></li>
-						<li><a class="" href="index_2.html">账户转账</a></li>
-						<li><a class="" href="index_2.html">借入借出</a></li>
-						<li><a class="" href="index_2.html">固定资产</a></li>
-						<li><a class="" href="index_2.html">投资理财</a></li>
+                        <li class="active"><a class="" href="index_2.html">公客列表</a></li>
+                        <li><a class="" href="index.html">我的客户</a></li>
+						<li><a class="" href="index_2.html">店组客户</a></li>
+						<li><a class="" href="index_2.html">导入客列表</a></li>
+						<li><a class="" href="index_2.html">成交客户</a></li>
+						<li><a class="" href="index_2.html">潜客</a></li>
+						<li><a class="" href="index_2.html">无效客户</a></li>
+						<li><a class="" href="index_2.html">客户跟进</a></li>
+						<li><a class="" href="index_2.html">客户带看</a></li>
                     </ul>
                 </li>
                 <li class="has-sub">
                     <a href="javascript:;" class="">
-                        <span class="icon-box"> <i class="icon-bar-chart"></i></span>报表中心
+                        <span class="icon-box"> <i class="icon-home"></i></span>房源管理
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                        <li><a class="" href="ui_elements_general.html">当日明细统计</a></li>
-                        <li><a class="" href="ui_elements_buttons.html">历史明细统计</a></li>
-                        <li><a class="" href="ui_elements_buttons.html">账户余额统计</a></li>
-                        <li><a class="" href="ui_elements_tabs_accordions.html">收支一览表</a></li>
-                        <li><a class="" href="ui_elements_typography.html">转账统计</a></li>
-                        <li><a class="" href="tree_view.html">借贷统计</a></li>
-                        <li><a class="" href="nestable.html">综合信息统计</a></li>
+                        <li><a class="" href="ui_elements_general.html">有效房源</a></li>
+                        <li><a class="" href="ui_elements_buttons.html">潜房列表</a></li>
+                        <li><a class="" href="ui_elements_buttons.html">我的房源</a></li>
+                        <li><a class="" href="ui_elements_tabs_accordions.html">共享池房源</a></li>
+                        <li><a class="" href="ui_elements_typography.html">店租房源</a></li>
+                        <li><a class="" href="tree_view.html">收藏房源</a></li>
+                        <li><a class="" href="nestable.html">推荐房源</a></li>
                     </ul>
                 </li>
                 <li class="has-sub">
                     <a href="javascript:;" class="">
-                        <span class="icon-box"><i class="icon-tasks"></i></span>信息设置
+                        <span class="icon-box"><i class="icon-bar-chart"></i></span>员工工作量报表
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub">
-                    	<li><a class="" href="calendar.html">基本信息</a></li>
-                        <li><a class="" href="calendar.html">账户设置</a></li>
-                        <li><a class="" href="data_table.html">收支设置</a></li>
-                        <li><a class="" href="grids.html">家庭预算</a></li>
-                        <li><a class="" href="charts.html">投资管理</a></li>
-                        <li><a class="" href="messengers.html">提醒设置</a></li>
-                        <li><a class="" href="gallery.html"> 公共查询</a></li>
-                        <li><a class="" href="gallery.html">系统服务</a></li>
-                    </ul>
-                </li>
-                <li class="has-sub">
-                    <a href="javascript:;" class="">
-                        <span class="icon-box"><i class="icon-cogs"></i></span>系统管理
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub">
-                        <li><a class="" href="${base}/user/userlist">用户管理</a></li>
-                        <li><a class="" href="form_layout.html">用户组管理</a></li>
-                        <li><a class="" href="form_component.html">权限管理</a></li>
-                        <li><a class="" href="${base}/menu/menulist">菜单管理</a></li>
-                        <li><a class="" href="form_validation.html">角色管理</a></li>
-                        <li><a class="" href="form_validation.html">样式管理</a></li>
-                        <li><a class="" href="form_validation.html">备份还原</a></li>
-                        <li><a class="" href="form_validation.html">密码设置</a></li>
+                    	<li><a class="" href="calendar.html">员工工作量</a></li>
+                        <li><a class="" href="calendar.html">店组工作量</a></li>
                     </ul>
                 </li>
                 <li class="has-sub">

@@ -29,4 +29,9 @@ public class IndexController extends BaseController {
 		model.addAttribute("config", config);
 		return "index";
 	}
+	
+	@RequestMapping(value = "index/admin")
+	public String indexAdminInfo(Model model,HttpServletRequest request){
+		return "adminIndex";
+	}
 }

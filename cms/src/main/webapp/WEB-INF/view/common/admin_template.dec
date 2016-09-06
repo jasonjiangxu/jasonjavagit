@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>后台管理系统</title>
+		<#include "headStyle.ftl">
+	</head>
+    <body>
+      <div class="easyui-layout" data-options="fit:true">
+		<div data-options="region:'north'" style="height:50px"><#include "north.ftl"></div>
+		<div data-options="region:'south',split:true" style="height:50px;"><#include "south.ftl"></div>
+		<div data-options="region:'east',split:true" title="工具栏" style="width:150px;">
+			<#include "east.ftl">
+		</div>
+		<div data-options="region:'west',split:true" title="菜单栏" style="width:180px;">
+			<#include "west.ftl">
+		</div>
+		${body}
+	</div>
+	</body>
+</html>

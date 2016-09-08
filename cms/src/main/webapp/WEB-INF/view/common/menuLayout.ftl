@@ -20,7 +20,7 @@
                     </a>
                     <ul class="sub">
                         <li class="active"><a class="" href="index_2.html">公客列表</a></li>
-                        <li><a class="" href="index.html">我的客户</a></li>
+                        <li><a class="" href="${base}/cust/custlist">我的客户</a></li>
 						<li><a class="" href="index_2.html">店组客户</a></li>
 						<li><a class="" href="index_2.html">导入客列表</a></li>
 						<li><a class="" href="index_2.html">成交客户</a></li>

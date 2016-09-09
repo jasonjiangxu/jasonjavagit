@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/view/common">
+	<excludes>
+		<pattern>/static/*</pattern>
+		<pattern>/index.jsp</pattern>
+	</excludes>
+
+	<decorator name="default" page="metronic_template.dec">
+		<pattern>/*</pattern>
+	</decorator>
+	
+	<decorator name="box" page="box_template.dec">
+		<pattern>/*/box/*</pattern>
+	</decorator>
+	
+	<decorator name="admin" page="admin_template.dec">
+		<pattern>/*/admin</pattern>
+	</decorator>
+</decorators>

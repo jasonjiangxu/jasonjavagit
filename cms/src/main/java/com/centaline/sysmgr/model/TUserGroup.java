@@ -13,6 +13,14 @@ public class TUserGroup extends BaseEntity {
 	
 	private String groupFk;
 	
+	public String getGroupFk() {
+		return groupFk;
+	}
+
+	public void setGroupFk(String groupFk) {
+		this.groupFk = groupFk;
+	}
+
 	public String getGroupName() {
 		return groupName;
 	}

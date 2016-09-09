@@ -1,5 +1,4 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  
   <parent>
 		<groupId>com.centaline.cms</groupId>
 		<artifactId>cms-parent</artifactId>
@@ -7,17 +6,17 @@
 	</parent>
 	
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.cn.jx</groupId>
-  <artifactId>cms</artifactId>
+  <groupId>com.jx.sales.client</groupId>
+  <artifactId>sales-client</artifactId>
   <packaging>war</packaging>
   
   <properties>
   	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-  <!-- maven打成war包放到tomcat目录下，即可运行 -->
+   <!-- maven打成war包放到tomcat目录下，即可运行 -->
   <build>
-	<finalName>cms</finalName>
+	<finalName>sales-client</finalName>
 	<plugins>
 		<plugin>
 			<artifactId>maven-war-plugin</artifactId>
@@ -40,4 +39,5 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
   </dependencies>
+  
 </project>

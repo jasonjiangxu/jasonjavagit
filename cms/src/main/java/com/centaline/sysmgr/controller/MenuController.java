@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.centaline.core.controller.BaseController;
-import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TConfig;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
@@ -61,11 +60,11 @@ public class MenuController extends BaseController{
 	public String findMenuList(Model model,Integer page,Integer rows,TMenu tm,String condition) throws Exception {
 	/*	page=page==null?1:page;
 		rows=rows==null?PageUtil.NUM_DEFAULT_PAGE:rows;*/
-		String[] condis=null;
+		/*String[] condis=null;
 		if(condition!=null && !"".equals(condition)){
 			condis=condition.split(",");
-		}
-		PageUtil<TMenu> menulist=menuService.findMenusByPage(page, rows, condis, tm);
+		}*/
+		//PageUtil<TMenu> menulist=menuService.findMenusByPage(page, rows, condis, tm);
 		String re="{\"total\":7,\"rows\":[{\"id\":1,\"name\":\"All Tasks\",\"parentCode\":\"3/4/2010\",\"level\":\"3/20/2010\",\"progress\":60,\"iconCls\":\"icon-ok\"},"
 				+"{\"id\":2,\"name\":\"Designing\",\"begin\":\"3/4/2010\",\"end\":\"3/10/2010\",\"progress\":100,\"_parentId\":1,\"state\":\"closed\"},"
 				+ "{\"id\":21,\"name\":\"Database\",\"persons\":2,\"parentCode\":\"3/4/2010\",\"level\":\"3/6/2010\",\"progress\":100,\"_parentId\":2},"

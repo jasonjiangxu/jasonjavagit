@@ -6,7 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.centaline.sysmgr.model.TConfig;
+import com.centaline.core.model.TConfig;
+
 
 /**
  * 

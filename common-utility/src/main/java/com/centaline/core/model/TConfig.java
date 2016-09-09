@@ -1,4 +1,4 @@
-package com.centaline.sysmgr.model;
+package com.centaline.core.model;
 
 import com.centaline.core.model.BaseEntity;
 

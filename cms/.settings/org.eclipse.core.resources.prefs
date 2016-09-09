@@ -1,8 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
-encoding//src/main/java/com/centaline/core/model/BaseEntity.java=UTF-8
-encoding//src/main/java/com/centaline/core/model/BaseFKEntity.java=UTF-8
-encoding//src/main/java/com/centaline/core/web/PageUtil.java=UTF-8
 encoding//src/main/java/com/centaline/sysmgr/controller/MenuController.java=UTF-8
 encoding//src/main/java/com/centaline/sysmgr/controller/UserController.java=UTF-8
 encoding//src/main/java/com/centaline/sysmgr/model/TMenu.java=UTF-8

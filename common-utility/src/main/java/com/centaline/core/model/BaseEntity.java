@@ -3,14 +3,12 @@ package com.centaline.core.model;
 import java.io.Serializable;
 import java.util.Date;
 
-import javax.persistence.MappedSuperclass;
 
 /**
  * 基础对象 抽象公共的属性
  * @author jiangxu2
  *
  */
-@MappedSuperclass
 public abstract class BaseEntity implements Serializable {
 	
 	private static final long serialVersionUID = -4606172629875853524L;

@@ -1,7 +1,7 @@
 package com.centaline.sysmgr.service;
 
-import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TUser;
+import com.jx.utility.web.PageUtil;
 
 /**
  * 

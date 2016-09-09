@@ -1,6 +1,6 @@
 package com.centaline.sysmgr.model;
 
-import com.centaline.core.model.BaseEntity;
+import com.jx.core.model.BaseEntity;
 
 /**
  * 

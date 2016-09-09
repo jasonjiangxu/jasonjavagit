@@ -1,7 +1,7 @@
 package com.centaline.sysmgr.model;
 
+import com.jx.core.model.BaseEntity;
 
-import com.centaline.core.model.BaseEntity;
 public class TUserGroup extends BaseEntity {
 
 	private static final long serialVersionUID = -2318321144434315344L;

@@ -7,9 +7,9 @@ import java.util.UUID;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TMenu;
 import com.centaline.sysmgr.service.MenuService;
+import com.jx.utility.web.PageUtil;
 
 import net.sf.json.JSONArray;
 

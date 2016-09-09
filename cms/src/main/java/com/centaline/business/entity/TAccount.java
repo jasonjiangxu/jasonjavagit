@@ -1,6 +1,6 @@
 package com.centaline.business.entity;
 
-import com.centaline.core.model.BaseEntity;
+import com.jx.core.model.BaseEntity;
 
 /**
  * �˻�

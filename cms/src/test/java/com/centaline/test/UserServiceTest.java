@@ -5,9 +5,9 @@ import java.util.Date;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TUser;
 import com.centaline.sysmgr.service.UserService;
+import com.jx.utility.web.PageUtil;
 
 /**
  * 菜单service层测试例子

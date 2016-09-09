@@ -2,7 +2,7 @@ package com.centaline.sysmgr.model;
 
 import java.util.Date;
 
-import com.centaline.core.model.BaseEntity;
+import com.jx.core.model.BaseEntity;
 import com.jx.utility.common_utility.util.Common;
 
 import net.sf.json.JSONObject;

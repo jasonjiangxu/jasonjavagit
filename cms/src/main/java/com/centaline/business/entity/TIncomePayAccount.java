@@ -2,7 +2,8 @@ package com.centaline.business.entity;
 
 import java.util.Date;
 
-import com.centaline.core.model.BaseEntity;
+import com.jx.core.model.BaseEntity;
+
 
 /**
  * ���롢֧������

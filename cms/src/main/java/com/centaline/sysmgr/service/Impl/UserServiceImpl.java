@@ -2,10 +2,10 @@ package com.centaline.sysmgr.service.Impl;
 
 import org.springframework.stereotype.Service;
 
-import com.centaline.core.service.BaseService;
-import com.centaline.core.web.PageUtil;
 import com.centaline.sysmgr.model.TUser;
 import com.centaline.sysmgr.service.UserService;
+import com.jx.core.service.BaseService;
+import com.jx.utility.web.PageUtil;
 
 /**
  * 

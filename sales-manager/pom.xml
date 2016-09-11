@@ -17,7 +17,7 @@
   
   <!-- maven打成war包放到tomcat目录下，即可运行 -->
   <build>
-	<finalName>cms</finalName>
+	<finalName>sales-manager</finalName>
 	<plugins>
 		<plugin>
 			<artifactId>maven-war-plugin</artifactId>

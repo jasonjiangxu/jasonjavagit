@@ -68,7 +68,7 @@
 	<!-- freemarkerFilter -->
 	<filter>
 		<filter-name>freemarkerFilter</filter-name>
-		<filter-class>com.centaline.core.web.FreemarkerFilter</filter-class>
+		<filter-class>com.jx.utility.web.FreemarkerFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>freemarkerFilter</filter-name>

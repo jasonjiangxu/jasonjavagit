@@ -4,7 +4,7 @@
 <meta content="" name="author" />
 	<link href="${base}/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="${base}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
-	<link href="${base}/bootstrap/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="${base}/bootstrap/css/font-awesome.min.css?v=0.0.2" rel="stylesheet" />
 	
 	<link href="${base}/bootstrap/css/style.css" rel="stylesheet" />
 	<link href="${base}/bootstrap/css/style-metro.css" rel="stylesheet" />

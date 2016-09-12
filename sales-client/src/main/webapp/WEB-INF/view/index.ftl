@@ -2,12 +2,12 @@
 		<div class="navbar-inner">
 			<div class="container-fluid">
 				<a class="brand" href="index.html">
-				<img src="media/image/logo.png" alt="logo"/>
+				<img src="${base}/bootstrap/image/logo.png" alt="logo"/>
 				</a>
 				<!-- END LOGO -->
 				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
 				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-				<img src="media/image/menu-toggler.png" alt="" />
+				<img src="${base}/bootstrap/image/menu-toggler.png" alt="" />
 				</a>          
 				<!-- END RESPONSIVE MENU TOGGLER -->            
 				<ul class="nav pull-right">
@@ -152,7 +152,7 @@
 
 								<a href="inbox.html?a=view">
 
-								<span class="photo"><img src="media/image/avatar2.jpg" alt="" /></span>
+								<span class="photo"><img src="${base}/bootstrap/image/avatar2.jpg" alt="" /></span>
 
 								<span class="subject">
 
@@ -178,7 +178,7 @@
 
 								<a href="inbox.html?a=view">
 
-								<span class="photo"><img src="./media/image/avatar3.jpg" alt="" /></span>
+								<span class="photo"><img src="${base}/bootstrap/image/avatar3.jpg" alt="" /></span>
 
 								<span class="subject">
 
@@ -204,7 +204,7 @@
 
 								<a href="inbox.html?a=view">
 
-								<span class="photo"><img src="./media/image/avatar1.jpg" alt="" /></span>
+								<span class="photo"><img src="${base}/bootstrap/image/avatar1.jpg" alt="" /></span>
 
 								<span class="subject">
 
@@ -408,7 +408,7 @@
 
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-						<img alt="" src="media/image/avatar1_small.jpg" />
+						<img alt="" src="${base}/bootstrap/image/avatar1_small.jpg" />
 
 						<span class="username">Bob Nilson</span>
 
@@ -1699,7 +1699,7 @@
 
 									<div id="site_statistics_loading">
 
-										<img src="media/image/loading.gif" alt="loading" />
+										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
 
 									</div>
 
@@ -1745,7 +1745,7 @@
 
 									<div id="site_activities_loading">
 
-										<img src="media/image/loading.gif" alt="loading" />
+										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
 
 									</div>
 
@@ -1791,7 +1791,7 @@
 
 									<div id="load_statistics_loading">
 
-										<img src="media/image/loading.gif" alt="loading" />
+										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
 
 									</div>
 
@@ -1991,7 +1991,7 @@
 
 									<div id="region_statistics_loading">
 
-										<img src="media/image/loading.gif" alt="loading" />
+										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
 
 									</div>
 
@@ -3355,7 +3355,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3375,7 +3375,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3399,7 +3399,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3419,7 +3419,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3443,7 +3443,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3463,7 +3463,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3487,7 +3487,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3503,7 +3503,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3527,7 +3527,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3543,7 +3543,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3567,7 +3567,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3587,7 +3587,7 @@
 
 														<div class="span6 user-info">
 
-															<img alt="" src="media/image/avatar.png" />
+															<img alt="" src="${base}/bootstrap/image/avatar.png" />
 
 															<div class="details">
 
@@ -3689,7 +3689,7 @@
 
 											<li class="in">
 
-												<img class="avatar" alt="" src="media/image/avatar1.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
 
 												<div class="message">
 
@@ -3711,7 +3711,7 @@
 
 											<li class="out">
 
-												<img class="avatar" alt="" src="media/image/avatar2.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar2.jpg" />
 
 												<div class="message">
 
@@ -3733,7 +3733,7 @@
 
 											<li class="in">
 
-												<img class="avatar" alt="" src="media/image/avatar1.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
 
 												<div class="message">
 
@@ -3755,7 +3755,7 @@
 
 											<li class="out">
 
-												<img class="avatar" alt="" src="media/image/avatar3.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
 
 												<div class="message">
 
@@ -3777,7 +3777,7 @@
 
 											<li class="in">
 
-												<img class="avatar" alt="" src="media/image/avatar3.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
 
 												<div class="message">
 
@@ -3799,7 +3799,7 @@
 
 											<li class="out">
 
-												<img class="avatar" alt="" src="media/image/avatar1.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
 
 												<div class="message">
 
@@ -3821,7 +3821,7 @@
 
 											<li class="in">
 
-												<img class="avatar" alt="" src="media/image/avatar3.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
 
 												<div class="message">
 
@@ -3845,7 +3845,7 @@
 
 											<li class="out">
 
-												<img class="avatar" alt="" src="media/image/avatar1.jpg" />
+												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
 
 												<div class="message">
 
@@ -3932,8 +3932,4 @@
 		</div>
 
 	</div>
-<script src="${base}/view/index.js"></script>
-<link href="${base}/plugin/datepicker/css/daterangepicker.css" rel="stylesheet">
-<link href="${base}/plugin/datepicker/css/fullcalendar.css" rel="stylesheet">
-<link href="${base}/bootstrap/css/jquery.easy-pie-chart.css.js" rel="stylesheet" type="text/css" media="screen"/>
 	

@@ -1,3935 +1,1218 @@
-	<div class="header navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container-fluid">
-				<a class="brand" href="index.html">
-				<img src="${base}/bootstrap/image/logo.png" alt="logo"/>
-				</a>
-				<!-- END LOGO -->
-				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
-				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-				<img src="${base}/bootstrap/image/menu-toggler.png" alt="" />
-				</a>          
-				<!-- END RESPONSIVE MENU TOGGLER -->            
-				<ul class="nav pull-right">
-
-					<!-- BEGIN NOTIFICATION DROPDOWN -->   
-
-					<li class="dropdown" id="header_notification_bar">
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-						<i class="icon-warning-sign"></i>
-
-						<span class="badge">6</span>
-
-						</a>
-
-						<ul class="dropdown-menu extended notification">
-
-							<li>
-
-								<p>You have 14 new notifications</p>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-success"><i class="icon-plus"></i></span>
-
-								New user registered. 
-
-								<span class="time">Just now</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-important"><i class="icon-bolt"></i></span>
-
-								Server #12 overloaded. 
-
-								<span class="time">15 mins</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-warning"><i class="icon-bell"></i></span>
-
-								Server #2 not respoding.
-
-								<span class="time">22 mins</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-info"><i class="icon-bullhorn"></i></span>
-
-								Application error.
-
-								<span class="time">40 mins</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-important"><i class="icon-bolt"></i></span>
-
-								Database overloaded 68%. 
-
-								<span class="time">2 hrs</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="label label-important"><i class="icon-bolt"></i></span>
-
-								2 user IP blocked.
-
-								<span class="time">5 hrs</span>
-
-								</a>
-
-							</li>
-
-							<li class="external">
-
-								<a href="#">See all notifications <i class="m-icon-swapright"></i></a>
-
-							</li>
-
-						</ul>
-
-					</li>
-
-					<!-- END NOTIFICATION DROPDOWN -->
-
-					<!-- BEGIN INBOX DROPDOWN -->
-
-					<li class="dropdown" id="header_inbox_bar">
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-						<i class="icon-envelope"></i>
-
-						<span class="badge">5</span>
-
-						</a>
-
-						<ul class="dropdown-menu extended inbox">
-
-							<li>
-
-								<p>You have 12 new messages</p>
-
-							</li>
-
-							<li>
-
-								<a href="inbox.html?a=view">
-
-								<span class="photo"><img src="${base}/bootstrap/image/avatar2.jpg" alt="" /></span>
-
-								<span class="subject">
-
-								<span class="from">Lisa Wong</span>
-
-								<span class="time">Just Now</span>
-
-								</span>
-
-								<span class="message">
-
-								Vivamus sed auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>  
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="inbox.html?a=view">
-
-								<span class="photo"><img src="${base}/bootstrap/image/avatar3.jpg" alt="" /></span>
-
-								<span class="subject">
-
-								<span class="from">Richard Doe</span>
-
-								<span class="time">16 mins</span>
-
-								</span>
-
-								<span class="message">
-
-								Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>  
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="inbox.html?a=view">
-
-								<span class="photo"><img src="${base}/bootstrap/image/avatar1.jpg" alt="" /></span>
-
-								<span class="subject">
-
-								<span class="from">Bob Nilson</span>
-
-								<span class="time">2 hrs</span>
-
-								</span>
-
-								<span class="message">
-
-								Vivamus sed nibh auctor nibh congue nibh. auctor nibh
-
-								auctor nibh...
-
-								</span>  
-
-								</a>
-
-							</li>
-
-							<li class="external">
-
-								<a href="inbox.html">See all messages <i class="m-icon-swapright"></i></a>
-
-							</li>
-
-						</ul>
-
-					</li>
-
-					<!-- END INBOX DROPDOWN -->
-
-					<!-- BEGIN TODO DROPDOWN -->
-
-					<li class="dropdown" id="header_task_bar">
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-						<i class="icon-tasks"></i>
-
-						<span class="badge">5</span>
-
-						</a>
-
-						<ul class="dropdown-menu extended tasks">
-
-							<li>
-
-								<p>You have 12 pending tasks</p>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">New release v1.2</span>
-
-								<span class="percent">30%</span>
-
-								</span>
-
-								<span class="progress progress-success ">
-
-								<span style="width: 30%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">Application deployment</span>
-
-								<span class="percent">65%</span>
-
-								</span>
-
-								<span class="progress progress-danger progress-striped active">
-
-								<span style="width: 65%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">Mobile app release</span>
-
-								<span class="percent">98%</span>
-
-								</span>
-
-								<span class="progress progress-success">
-
-								<span style="width: 98%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">Database migration</span>
-
-								<span class="percent">10%</span>
-
-								</span>
-
-								<span class="progress progress-warning progress-striped">
-
-								<span style="width: 10%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">Web server upgrade</span>
-
-								<span class="percent">58%</span>
-
-								</span>
-
-								<span class="progress progress-info">
-
-								<span style="width: 58%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li>
-
-								<a href="#">
-
-								<span class="task">
-
-								<span class="desc">Mobile development</span>
-
-								<span class="percent">85%</span>
-
-								</span>
-
-								<span class="progress progress-success">
-
-								<span style="width: 85%;" class="bar"></span>
-
-								</span>
-
-								</a>
-
-							</li>
-
-							<li class="external">
-
-								<a href="#">See all tasks <i class="m-icon-swapright"></i></a>
-
-							</li>
-
-						</ul>
-
-					</li>
-
-					<!-- END TODO DROPDOWN -->
-
-					<!-- BEGIN USER LOGIN DROPDOWN -->
-
-					<li class="dropdown user">
-
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-						<img alt="" src="${base}/bootstrap/image/avatar1_small.jpg" />
-
-						<span class="username">Bob Nilson</span>
-
-						<i class="icon-angle-down"></i>
-
-						</a>
-
-						<ul class="dropdown-menu">
-
-							<li><a href="extra_profile.html"><i class="icon-user"></i> My Profile</a></li>
-
-							<li><a href="page_calendar.html"><i class="icon-calendar"></i> My Calendar</a></li>
-
-							<li><a href="inbox.html"><i class="icon-envelope"></i> My Inbox(3)</a></li>
-
-							<li><a href="#"><i class="icon-tasks"></i> My Tasks</a></li>
-
-							<li class="divider"></li>
-
-							<li><a href="extra_lock.html"><i class="icon-lock"></i> Lock Screen</a></li>
-
-							<li><a href="login.html"><i class="icon-key"></i> Log Out</a></li>
-
-						</ul>
-
-					</li>
-
-					<!-- END USER LOGIN DROPDOWN -->
-
-				</ul>
-
-				<!-- END TOP NAVIGATION MENU --> 
-
-			</div>
-
-		</div>
-
-		<!-- END TOP NAVIGATION BAR -->
-
-	</div>
-
-	<!-- END HEADER -->
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
-
-	<!-- BEGIN CONTAINER -->
-
-	<div class="page-container">
-
-		<!-- BEGIN SIDEBAR -->
-
-		<div class="page-sidebar nav-collapse collapse">
-
-			<!-- BEGIN SIDEBAR MENU -->        
-
-			<ul class="page-sidebar-menu">
-
-				<li>
-
-					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-
-					<div class="sidebar-toggler hidden-phone"></div>
-
-					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
-
-				</li>
-
-				<li>
-
-					<!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-
-					<form class="sidebar-search">
-
-						<div class="input-box">
-
-							<a href="javascript:;" class="remove"></a>
-
-							<input type="text" placeholder="Search..." />
-
-							<input type="button" class="submit" value=" " />
-
-						</div>
-
-					</form>
-
-					<!-- END RESPONSIVE QUICK SEARCH FORM -->
-
-				</li>
-
-				<li class="start active ">
-
-					<a href="index.html">
-
-					<i class="icon-home"></i> 
-
-					<span class="title">Dashboard</span>
-
-					<span class="selected"></span>
-
-					</a>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-cogs"></i> 
-
-					<span class="title">Layouts</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="layout_horizontal_sidebar_menu.html">
-
-							Horzontal & Sidebar Menu</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_horizontal_menu1.html">
-
-							Horzontal Menu 1</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_horizontal_menu2.html">
-
-							Horzontal Menu 2</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_promo.html">
-
-							Promo Page</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_email.html">
-
-							Email Templates</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_ajax.html">
-
-							Content Loading via Ajax</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_sidebar_closed.html">
-
-							Sidebar Closed Page</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_blank_page.html">
-
-							Blank Page</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_boxed_page.html">
-
-							Boxed Page</a>
-
-						</li>
-
-						<li >
-
-							<a href="layout_boxed_not_responsive.html">
-
-							Non-Responsive Boxed Layout</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-bookmark-empty"></i> 
-
-					<span class="title">UI Features</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="ui_general.html">
-
-							General</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_buttons.html">
-
-							Buttons</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_modals.html">
-
-							Enhanced Modals</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_tabs_accordions.html">
-
-							Tabs & Accordions</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_jqueryui.html">
-
-							jQuery UI Components</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_sliders.html">
-
-							Sliders</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_tiles.html">
-
-							Tiles</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_typography.html">
-
-							Typography</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_tree.html">
-
-							Tree View</a>
-
-						</li>
-
-						<li >
-
-							<a href="ui_nestable.html">
-
-							Nestable List</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-table"></i> 
-
-					<span class="title">Form Stuff</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="form_layout.html">
-
-							Form Layouts</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_samples.html">
-
-							Advance Form Samples</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_component.html">
-
-							Form Components</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_wizard.html">
-
-							Form Wizard</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_validation.html">
-
-							Form Validation</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_fileupload.html">
-
-							Multiple File Upload</a>
-
-						</li>
-
-						<li >
-
-							<a href="form_dropzone.html">
-
-							Dropzone File Upload</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-briefcase"></i> 
-
-					<span class="title">Pages</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="page_timeline.html">
-
-							<i class="icon-time"></i>
-
-							Timeline</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_coming_soon.html">
-
-							<i class="icon-cogs"></i>
-
-							Coming Soon</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_blog.html">
-
-							<i class="icon-comments"></i>
-
-							Blog</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_blog_item.html">
-
-							<i class="icon-font"></i>
-
-							Blog Post</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_news.html">
-
-							<i class="icon-coffee"></i>
-
-							News</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_news_item.html">
-
-							<i class="icon-bell"></i>
-
-							News View</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_about.html">
-
-							<i class="icon-group"></i>
-
-							About Us</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_contact.html">
-
-							<i class="icon-envelope-alt"></i>
-
-							Contact Us</a>
-
-						</li>
-
-						<li >
-
-							<a href="page_calendar.html">
-
-							<i class="icon-calendar"></i>
-
-							Calendar</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-gift"></i> 
-
-					<span class="title">Extra</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="extra_profile.html">
-
-							User Profile</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_lock.html">
-
-							Lock Screen</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_faq.html">
-
-							FAQ</a>
-
-						</li>
-
-						<li >
-
-							<a href="inbox.html">
-
-							Inbox</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_search.html">
-
-							Search Results</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_invoice.html">
-
-							Invoice</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_pricing_table.html">
-
-							Pricing Tables</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_image_manager.html">
-
-							Image Manager</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_404_option1.html">
-
-							404 Page Option 1</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_404_option2.html">
-
-							404 Page Option 2</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_404_option3.html">
-
-							404 Page Option 3</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_500_option1.html">
-
-							500 Page Option 1</a>
-
-						</li>
-
-						<li >
-
-							<a href="extra_500_option2.html">
-
-							500 Page Option 2</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li>
-
-					<a class="active" href="javascript:;">
-
-					<i class="icon-sitemap"></i> 
-
-					<span class="title">3 Level Menu</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li>
-
-							<a href="javascript:;">
-
-							Item 1
-
-							<span class="arrow"></span>
-
-							</a>
-
-							<ul class="sub-menu">
-
-								<li><a href="#">Sample Link 1</a></li>
-
-								<li><a href="#">Sample Link 2</a></li>
-
-								<li><a href="#">Sample Link 3</a></li>
-
-							</ul>
-
-						</li>
-
-						<li>
-
-							<a href="javascript:;">
-
-							Item 1
-
-							<span class="arrow"></span>
-
-							</a>
-
-							<ul class="sub-menu">
-
-								<li><a href="#">Sample Link 1</a></li>
-
-								<li><a href="#">Sample Link 1</a></li>
-
-								<li><a href="#">Sample Link 1</a></li>
-
-							</ul>
-
-						</li>
-
-						<li>
-
-							<a href="#">
-
-							Item 3
-
-							</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li>
-
-					<a href="javascript:;">
-
-					<i class="icon-folder-open"></i> 
-
-					<span class="title">4 Level Menu</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li>
-
-							<a href="javascript:;">
-
-							<i class="icon-cogs"></i> 
-
-							Item 1
-
-							<span class="arrow"></span>
-
-							</a>
-
-							<ul class="sub-menu">
-
-								<li>
-
-									<a href="javascript:;">
-
-									<i class="icon-user"></i>
-
-									Sample Link 1
-
-									<span class="arrow"></span>
-
-									</a>
-
-									<ul class="sub-menu">
-
-										<li><a href="#"><i class="icon-remove"></i> Sample Link 1</a></li>
-
-										<li><a href="#"><i class="icon-pencil"></i> Sample Link 1</a></li>
-
-										<li><a href="#"><i class="icon-edit"></i> Sample Link 1</a></li>
-
-									</ul>
-
-								</li>
-
-								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
-
-								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 2</a></li>
-
-								<li><a href="#"><i class="icon-bell"></i>  Sample Link 3</a></li>
-
-							</ul>
-
-						</li>
-
-						<li>
-
-							<a href="javascript:;">
-
-							<i class="icon-globe"></i> 
-
-							Item 2
-
-							<span class="arrow"></span>
-
-							</a>
-
-							<ul class="sub-menu">
-
-								<li><a href="#"><i class="icon-user"></i>  Sample Link 1</a></li>
-
-								<li><a href="#"><i class="icon-external-link"></i>  Sample Link 1</a></li>
-
-								<li><a href="#"><i class="icon-bell"></i>  Sample Link 1</a></li>
-
-							</ul>
-
-						</li>
-
-						<li>
-
-							<a href="#">
-
-							<i class="icon-folder-open"></i>
-
-							Item 3
-
-							</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-user"></i> 
-
-					<span class="title">Login Options</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="login.html">
-
-							Login Form 1</a>
-
-						</li>
-
-						<li >
-
-							<a href="login_soft.html">
-
-							Login Form 2</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-th"></i> 
-
-					<span class="title">Data Tables</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="table_basic.html">
-
-							Basic Tables</a>
-
-						</li>
-
-						<li >
-
-							<a href="table_responsive.html">
-
-							Responsive Tables</a>
-
-						</li>
-
-						<li >
-
-							<a href="table_managed.html">
-
-							Managed Tables</a>
-
-						</li>
-
-						<li >
-
-							<a href="table_editable.html">
-
-							Editable Tables</a>
-
-						</li>
-
-						<li >
-
-							<a href="table_advanced.html">
-
-							Advanced Tables</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-file-text"></i> 
-
-					<span class="title">Portlets</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="portlet_general.html">
-
-							General Portlets</a>
-
-						</li>
-
-						<li >
-
-							<a href="portlet_draggable.html">
-
-							Draggable Portlets</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="">
-
-					<a href="javascript:;">
-
-					<i class="icon-map-marker"></i> 
-
-					<span class="title">Maps</span>
-
-					<span class="arrow "></span>
-
-					</a>
-
-					<ul class="sub-menu">
-
-						<li >
-
-							<a href="maps_google.html">
-
-							Google Maps</a>
-
-						</li>
-
-						<li >
-
-							<a href="maps_vector.html">
-
-							Vector Maps</a>
-
-						</li>
-
-					</ul>
-
-				</li>
-
-				<li class="last ">
-
-					<a href="charts.html">
-
-					<i class="icon-bar-chart"></i> 
-
-					<span class="title">Visual Charts</span>
-
-					</a>
-
-				</li>
-
-			</ul>
-
-			<!-- END SIDEBAR MENU -->
-
-		</div>
-
-		<!-- END SIDEBAR -->
-
-		<!-- BEGIN PAGE -->
-
-		<div class="page-content">
-
-			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-
-			<div id="portlet-config" class="modal hide">
-
-				<div class="modal-header">
-
-					<button data-dismiss="modal" class="close" type="button"></button>
-
-					<h3>Widget Settings</h3>
-
-				</div>
-
-				<div class="modal-body">
-
-					Widget settings form goes here
-
-				</div>
-
-			</div>
-
-			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-
-			<!-- BEGIN PAGE CONTAINER-->
-
-			<div class="container-fluid">
-
-				<!-- BEGIN PAGE HEADER-->
-
-				<div class="row-fluid">
-
-					<div class="span12">
-
-						<!-- BEGIN STYLE CUSTOMIZER -->
-
-						<div class="color-panel hidden-phone">
-
-							<div class="color-mode-icons icon-color"></div>
-
-							<div class="color-mode-icons icon-color-close"></div>
-
-							<div class="color-mode">
-
-								<p>THEME COLOR</p>
-
-								<ul class="inline">
-
-									<li class="color-black current color-default" data-style="default"></li>
-
-									<li class="color-blue" data-style="blue"></li>
-
-									<li class="color-brown" data-style="brown"></li>
-
-									<li class="color-purple" data-style="purple"></li>
-
-									<li class="color-grey" data-style="grey"></li>
-
-									<li class="color-white color-light" data-style="light"></li>
-
-								</ul>
-
-								<label>
-
-									<span>Layout</span>
-
-									<select class="layout-option m-wrap small">
-
-										<option value="fluid" selected>Fluid</option>
-
-										<option value="boxed">Boxed</option>
-
-									</select>
-
-								</label>
-
-								<label>
-
-									<span>Header</span>
-
-									<select class="header-option m-wrap small">
-
-										<option value="fixed" selected>Fixed</option>
-
-										<option value="default">Default</option>
-
-									</select>
-
-								</label>
-
-								<label>
-
-									<span>Sidebar</span>
-
-									<select class="sidebar-option m-wrap small">
-
-										<option value="fixed">Fixed</option>
-
-										<option value="default" selected>Default</option>
-
-									</select>
-
-								</label>
-
-								<label>
-
-									<span>Footer</span>
-
-									<select class="footer-option m-wrap small">
-
-										<option value="fixed">Fixed</option>
-
-										<option value="default" selected>Default</option>
-
-									</select>
-
-								</label>
-
-							</div>
-
-						</div>
-
-						<!-- END BEGIN STYLE CUSTOMIZER -->    
-
-						<!-- BEGIN PAGE TITLE & BREADCRUMB-->
-
-						<h3 class="page-title">
-
-							Dashboard <small>statistics and more</small>
-
-						</h3>
-
-						<ul class="breadcrumb">
-
-							<li>
-
-								<i class="icon-home"></i>
-
-								<a href="index.html">Home</a> 
-
-								<i class="icon-angle-right"></i>
-
-							</li>
-
-							<li><a href="#">Dashboard</a></li>
-
-							<li class="pull-right no-text-shadow">
-
-								<div id="dashboard-report-range" class="dashboard-date-range tooltips no-tooltip-on-touch-device responsive" data-tablet="" data-desktop="tooltips" data-placement="top" data-original-title="Change dashboard date range">
-
-									<i class="icon-calendar"></i>
-
-									<span></span>
-
-									<i class="icon-angle-down"></i>
-
-								</div>
-
-							</li>
-
-						</ul>
-
-						<!-- END PAGE TITLE & BREADCRUMB-->
-
-					</div>
-
-				</div>
-
-				<!-- END PAGE HEADER-->
-
-				<div id="dashboard">
-
-					<!-- BEGIN DASHBOARD STATS -->
-
-					<div class="row-fluid">
-
-						<div class="span3 responsive" data-tablet="span6" data-desktop="span3">
-
-							<div class="dashboard-stat blue">
-
-								<div class="visual">
-
-									<i class="icon-comments"></i>
-
-								</div>
-
-								<div class="details">
-
-									<div class="number">
-
-										1349
-
-									</div>
-
-									<div class="desc">                           
-
-										New Feedbacks
-
-									</div>
-
-								</div>
-
-								<a class="more" href="#">
-
-								View more <i class="m-icon-swapright m-icon-white"></i>
-
-								</a>                 
-
-							</div>
-
-						</div>
-
-						<div class="span3 responsive" data-tablet="span6" data-desktop="span3">
-
-							<div class="dashboard-stat green">
-
-								<div class="visual">
-
-									<i class="icon-shopping-cart"></i>
-
-								</div>
-
-								<div class="details">
-
-									<div class="number">549</div>
-
-									<div class="desc">New Orders</div>
-
-								</div>
-
-								<a class="more" href="#">
-
-								View more <i class="m-icon-swapright m-icon-white"></i>
-
-								</a>                 
-
-							</div>
-
-						</div>
-
-						<div class="span3 responsive" data-tablet="span6  fix-offset" data-desktop="span3">
-
-							<div class="dashboard-stat purple">
-
-								<div class="visual">
-
-									<i class="icon-globe"></i>
-
-								</div>
-
-								<div class="details">
-
-									<div class="number">+89%</div>
-
-									<div class="desc">Brand Popularity</div>
-
-								</div>
-
-								<a class="more" href="#">
-
-								View more <i class="m-icon-swapright m-icon-white"></i>
-
-								</a>                 
-
-							</div>
-
-						</div>
-
-						<div class="span3 responsive" data-tablet="span6" data-desktop="span3">
-
-							<div class="dashboard-stat yellow">
-
-								<div class="visual">
-
-									<i class="icon-bar-chart"></i>
-
-								</div>
-
-								<div class="details">
-
-									<div class="number">12,5M$</div>
-
-									<div class="desc">Total Profit</div>
-
-								</div>
-
-								<a class="more" href="#">
-
-								View more <i class="m-icon-swapright m-icon-white"></i>
-
-								</a>                 
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<!-- END DASHBOARD STATS -->
-
-					<div class="clearfix"></div>
-
-					<div class="row-fluid">
-
-						<div class="span6">
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet solid bordered light-grey">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-bar-chart"></i>Site Visits</div>
-
-									<div class="tools">
-
-										<div class="btn-group pull-right" data-toggle="buttons-radio">
-
-											<a href="" class="btn mini">Users</a>
-
-											<a href="" class="btn mini active">Feedbacks</a>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div id="site_statistics_loading">
-
-										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
-
-									</div>
-
-									<div id="site_statistics_content" class="hide">
-
-										<div id="site_statistics" class="chart"></div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-						</div>
-
-						<div class="span6">
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet solid light-grey bordered">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-bullhorn"></i>Activities</div>
-
-									<div class="tools">
-
-										<div class="btn-group pull-right" data-toggle="buttons-radio">
-
-											<a href="" class="btn blue mini active">Users</a>
-
-											<a href="" class="btn blue mini">Orders</a>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div id="site_activities_loading">
-
-										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
-
-									</div>
-
-									<div id="site_activities_content" class="hide">
-
-										<div id="site_activities" style="height:100px;"></div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet solid bordered light-grey">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-signal"></i>Server Load</div>
-
-									<div class="tools">
-
-										<div class="btn-group pull-right" data-toggle="buttons-radio">
-
-											<a href="" class="btn red mini active">
-
-											<span class="hidden-phone">Database</span>
-
-											<span class="visible-phone">DB</span></a>
-
-											<a href="" class="btn red mini">Web</a>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div id="load_statistics_loading">
-
-										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
-
-									</div>
-
-									<div id="load_statistics_content" class="hide">
-
-										<div id="load_statistics" style="height:108px;"></div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-						</div>
-
-					</div>
-
-					<div class="clearfix"></div>
-
-					<div class="row-fluid">
-
-						<div class="span6">
-
-							<div class="portlet box purple">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-calendar"></i>General Stats</div>
-
-									<div class="actions">
-
-										<a href="javascript:;" class="btn yellow easy-pie-chart-reload"><i class="icon-repeat"></i> Reload</a>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div class="row-fluid">
-
-										<div class="span4">
-
-											<div class="easy-pie-chart">
-
-												<div class="number transactions"  data-percent="55"><span>+55</span>%</div>
-
-												<a class="title" href="#">Transactions <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-										<div class="margin-bottom-10 visible-phone"></div>
-
-										<div class="span4">
-
-											<div class="easy-pie-chart">
-
-												<div class="number visits"  data-percent="85"><span>+85</span>%</div>
-
-												<a class="title" href="#">New Visits <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-										<div class="margin-bottom-10 visible-phone"></div>
-
-										<div class="span4">
-
-											<div class="easy-pie-chart">
-
-												<div class="number bounce"  data-percent="46"><span>-46</span>%</div>
-
-												<a class="title" href="#">Bounce <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="span6">
-
-							<div class="portlet box blue">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-calendar"></i>Server Stats</div>
-
-									<div class="tools">
-
-										<a href="" class="collapse"></a>
-
-										<a href="#portlet-config" data-toggle="modal" class="config"></a>
-
-										<a href="" class="reload"></a>
-
-										<a href="" class="remove"></a>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div class="row-fluid">
-
-										<div class="span4">
-
-											<div class="sparkline-chart">
-
-												<div class="number" id="sparkline_bar"></div>
-
-												<a class="title" href="#">Network <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-										<div class="margin-bottom-10 visible-phone"></div>
-
-										<div class="span4">
-
-											<div class="sparkline-chart">
-
-												<div class="number" id="sparkline_bar2"></div>
-
-												<a class="title" href="#">CPU Load <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-										<div class="margin-bottom-10 visible-phone"></div>
-
-										<div class="span4">
-
-											<div class="sparkline-chart">
-
-												<div class="number" id="sparkline_line"></div>
-
-												<a class="title" href="#">Load Rate <i class="m-icon-swapright"></i></a>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="clearfix"></div>
-
-					<div class="row-fluid">
-
-						<div class="span6">
-
-							<!-- BEGIN REGIONAL STATS PORTLET-->
-
-							<div class="portlet">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-globe"></i>Regional Stats</div>
-
-									<div class="tools">
-
-										<a href="" class="collapse"></a>
-
-										<a href="#portlet-config" data-toggle="modal" class="config"></a>
-
-										<a href="" class="reload"></a>
-
-										<a href="" class="remove"></a>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<div id="region_statistics_loading">
-
-										<img src="${base}/bootstrap/image/loading.gif" alt="loading" />
-
-									</div>
-
-									<div id="region_statistics_content" class="hide">
-
-										<div class="btn-toolbar">
-
-											<div class="btn-group " data-toggle="buttons-radio">
-
-												<a href="" class="btn mini active">Users</a>
-
-												<a href="" class="btn mini">Orders</a> 
-
-											</div>
-
-											<div class="btn-group pull-right">
-
-												<a href="" class="btn mini dropdown-toggle" data-toggle="dropdown">
-
-												Select Region <span class="icon-angle-down"></span>
-
-												</a>
-
-												<ul class="dropdown-menu pull-right">
-
-													<li><a href="javascript:;" id="regional_stat_world">World</a></li>
-
-													<li><a href="javascript:;" id="regional_stat_usa">USA</a></li>
-
-													<li><a href="javascript:;" id="regional_stat_europe">Europe</a></li>
-
-													<li><a href="javascript:;" id="regional_stat_russia">Russia</a></li>
-
-													<li><a href="javascript:;" id="regional_stat_germany">Germany</a></li>
-
-												</ul>
-
-											</div>
-
-										</div>
-
-										<div id="vmap_world" class="vmaps chart hide"></div>
-
-										<div id="vmap_usa" class="vmaps chart hide"></div>
-
-										<div id="vmap_europe" class="vmaps chart hide"></div>
-
-										<div id="vmap_russia" class="vmaps chart hide"></div>
-
-										<div id="vmap_germany" class="vmaps chart hide"></div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END REGIONAL STATS PORTLET-->
-
-						</div>
-
-						<div class="span6">
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet paddingless">
-
-								<div class="portlet-title line">
-
-									<div class="caption"><i class="icon-bell"></i>Feeds</div>
-
-									<div class="tools">
-
-										<a href="" class="collapse"></a>
-
-										<a href="#portlet-config" data-toggle="modal" class="config"></a>
-
-										<a href="" class="reload"></a>
-
-										<a href="" class="remove"></a>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body">
-
-									<!--BEGIN TABS-->
-
-									<div class="tabbable tabbable-custom">
-
-										<ul class="nav nav-tabs">
-
-											<li class="active"><a href="#tab_1_1" data-toggle="tab">System</a></li>
-
-											<li><a href="#tab_1_2" data-toggle="tab">Activities</a></li>
-
-											<li><a href="#tab_1_3" data-toggle="tab">Recent Users</a></li>
-
-										</ul>
-
-										<div class="tab-content">
-
-											<div class="tab-pane active" id="tab_1_1">
-
-												<div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible="0">
-
-													<ul class="feeds">
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-success">                        
-
-																			<i class="icon-bell"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			You have 4 pending tasks.
-
-																			<span class="label label-important label-mini">
-
-																			Take action 
-
-																			<i class="icon-share-alt"></i>
-
-																			</span>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	Just now
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New version v1.4 just lunched!   
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		20 mins
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-important">                      
-
-																			<i class="icon-bolt"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			Database server #12 overloaded. Please fix the issue.                      
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	24 mins
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	30 mins
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-success">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	40 mins
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-warning">                        
-
-																			<i class="icon-plus"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New user registered.                
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	1.5 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-success">                        
-
-																			<i class="icon-bell-alt"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			Web server hardware needs to be upgraded. 
-
-																			<span class="label label-inverse label-mini">Overdue</span>             
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	2 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label">                       
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	3 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-warning">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	5 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	18 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label">                       
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	21 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	22 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label">                       
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	21 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	22 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label">                       
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	21 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	22 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label">                       
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	21 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-info">                        
-
-																			<i class="icon-bullhorn"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			New order received. Please take care of it.                 
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	22 hours
-
-																</div>
-
-															</div>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-											<div class="tab-pane" id="tab_1_2">
-
-												<div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible1="1">
-
-													<ul class="feeds">
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New order received 
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		10 mins
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<div class="col1">
-
-																<div class="cont">
-
-																	<div class="cont-col1">
-
-																		<div class="label label-important">                      
-
-																			<i class="icon-bolt"></i>
-
-																		</div>
-
-																	</div>
-
-																	<div class="cont-col2">
-
-																		<div class="desc">
-
-																			Order #24DOP4 has been rejected.    
-
-																			<span class="label label-important label-mini">Take action <i class="icon-share-alt"></i></span>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-															</div>
-
-															<div class="col2">
-
-																<div class="date">
-
-																	24 mins
-
-																</div>
-
-															</div>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-														<li>
-
-															<a href="#">
-
-																<div class="col1">
-
-																	<div class="cont">
-
-																		<div class="cont-col1">
-
-																			<div class="label label-success">                        
-
-																				<i class="icon-bell"></i>
-
-																			</div>
-
-																		</div>
-
-																		<div class="cont-col2">
-
-																			<div class="desc">
-
-																				New user registered
-
-																			</div>
-
-																		</div>
-
-																	</div>
-
-																</div>
-
-																<div class="col2">
-
-																	<div class="date">
-
-																		Just now
-
-																	</div>
-
-																</div>
-
-															</a>
-
-														</li>
-
-													</ul>
-
-												</div>
-
-											</div>
-
-											<div class="tab-pane" id="tab_1_3">
-
-												<div class="scroller" data-height="290px" data-always-visible="1" data-rail-visible1="1">
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Robert Nilson</a> 
-
-																	<span class="label label-success">Approved</span>
-
-																</div>
-
-																<div>29 Jan 2013 10:45AM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 10:45AM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Eric Kim</a> 
-
-																	<span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 12:45PM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-important">In progress</span>
-
-																</div>
-
-																<div>19 Jan 2013 11:55PM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Eric Kim</a> 
-
-																	<span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 12:45PM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-important">In progress</span>
-
-																</div>
-
-																<div>19 Jan 2013 11:55PM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div><a href="#">Eric Kim</a> <span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 12:45PM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-important">In progress</span>
-
-																</div>
-
-																<div>19 Jan 2013 11:55PM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div><a href="#">Eric Kim</a> <span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 12:45PM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-important">In progress</span>
-
-																</div>
-
-																<div>19 Jan 2013 11:55PM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-													<div class="row-fluid">
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Eric Kim</a> 
-
-																	<span class="label label-info">Pending</span>
-
-																</div>
-
-																<div>19 Jan 2013 12:45PM</div>
-
-															</div>
-
-														</div>
-
-														<div class="span6 user-info">
-
-															<img alt="" src="${base}/bootstrap/image/avatar.png" />
-
-															<div class="details">
-
-																<div>
-
-																	<a href="#">Lisa Miller</a> 
-
-																	<span class="label label-important">In progress</span>
-
-																</div>
-
-																<div>19 Jan 2013 11:55PM</div>
-
-															</div>
-
-														</div>
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-									<!--END TABS-->
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-						</div>
-
-					</div>
-
-					<div class="clearfix"></div>
-
-					<div class="row-fluid">
-
-						<div class="span6">
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet box blue calendar">
-
-								<div class="portlet-title">
-
-									<div class="caption"><i class="icon-calendar"></i>Calendar</div>
-
-								</div>
-
-								<div class="portlet-body light-grey">
-
-									<div id="calendar">
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-						</div>
-
-						<div class="span6">
-
-							<!-- BEGIN PORTLET-->
-
-							<div class="portlet">
-
-								<div class="portlet-title line">
-
-									<div class="caption"><i class="icon-comments"></i>Chats</div>
-
-									<div class="tools">
-
-										<a href="" class="collapse"></a>
-
-										<a href="#portlet-config" data-toggle="modal" class="config"></a>
-
-										<a href="" class="reload"></a>
-
-										<a href="" class="remove"></a>
-
-									</div>
-
-								</div>
-
-								<div class="portlet-body" id="chats">
-
-									<div class="scroller" data-height="435px" data-always-visible="1" data-rail-visible1="1">
-
-										<ul class="chats">
-
-											<li class="in">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Bob Nilson</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="out">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar2.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Lisa Wong</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="in">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Bob Nilson</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="out">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Richard Doe</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="in">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Richard Doe</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="out">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Bob Nilson</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="in">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar3.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Richard Doe</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
-
-													sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
-													</span>
-
-												</div>
-
-											</li>
-
-											<li class="out">
-
-												<img class="avatar" alt="" src="${base}/bootstrap/image/avatar1.jpg" />
-
-												<div class="message">
-
-													<span class="arrow"></span>
-
-													<a href="#" class="name">Bob Nilson</a>
-
-													<span class="datetime">at Jul 25, 2012 11:09</span>
-
-													<span class="body">
-
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. sed diam nonummy nibh euismod tincidunt ut laoreet.
-
-													</span>
-
-												</div>
-
-											</li>
-
-										</ul>
-
-									</div>
-
-									<div class="chat-form">
-
-										<div class="input-cont">   
-
-											<input class="m-wrap" type="text" placeholder="Type a message here..." />
-
-										</div>
-
-										<div class="btn-cont"> 
-
-											<span class="arrow"></span>
-
-											<a href="" class="btn blue icn-only"><i class="icon-ok icon-white"></i></a>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<!-- END PORTLET-->
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<!-- END PAGE CONTAINER-->    
-
-		</div>
-
-		<!-- END PAGE -->
-
-	</div>
-
-	<!-- END CONTAINER -->
-
-	<!-- BEGIN FOOTER -->
-
-	<div class="footer">
-
-		<div class="footer-inner">
-
-			2013 &copy; Metronic by keenthemes.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
-
-		</div>
-
-		<div class="footer-tools">
-
-			<span class="go-top">
-
-			<i class="icon-angle-up"></i>
-
-			</span>
-
-		</div>
-
-	</div>
-	 
+ <#import "macro/pagemacro.ftl" as p>
+
+<div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="${base}/bootstrap/image/profile_small.jpg" />
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li><a href="profile.html">Profile</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li class="divider"></li>
+                                <li><a href="login.html">Logout</a></li>
+                            </ul>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="index.html">Dashboard v.1</a></li>
+                            <li ><a href="dashboard_2.html">Dashboard v.2</a></li>
+                            <li ><a href="dashboard_3.html">Dashboard v.3</a></li>
+                            <li ><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary pull-right">NEW</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="graph_flot.html">Flot Charts</a></li>
+                            <li><a href="graph_morris.html">Morris.js Charts</a></li>
+                            <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
+                            <li><a href="graph_chartjs.html">Chart.js</a></li>
+                            <li><a href="graph_peity.html">Peity Charts</a></li>
+                            <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="mailbox.html">Inbox</a></li>
+                            <li><a href="mail_detail.html">Email view</a></li>
+                            <li><a href="mail_compose.html">Compose email</a></li>
+                            <li><a href="email_template.html">Email templates</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span> </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="form_basic.html">Basic form</a></li>
+                            <li><a href="form_advanced.html">Advanced Plugins</a></li>
+                            <li><a href="form_wizard.html">Wizard</a></li>
+                            <li><a href="form_file_upload.html">File Upload</a></li>
+                            <li><a href="form_editors.html">Text Editor</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="project_detail.html">Project detail</a></li>
+                            <li><a href="teams_board.html">Teams board</a></li>
+                            <li><a href="clients.html">Clients</a></li>
+                            <li><a href="full_height.html">Outlook view</a></li>
+                            <li><a href="file_manager.html">File manager</a></li>
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="issue_tracker.html">Issue tracker</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="article.html">Article</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="pin_board.html">Pin board</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="search_results.html">Search results</a></li>
+                            <li><a href="lockscreen.html">Lockscreen</a></li>
+                            <li><a href="invoice.html">Invoice</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="login_two_columns.html">Login v.2</a></li>
+                            <li><a href="forgot_password.html">Forget password</a></li>
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="404.html">404 Page</a></li>
+                            <li><a href="500.html">500 Page</a></li>
+                            <li><a href="empty_page.html">Empty page</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="toastr_notifications.html">Notification</a></li>
+                            <li><a href="nestable_list.html">Nestable list</a></li>
+                            <li><a href="agile_board.html">Agile board</a></li>
+                            <li><a href="timeline_2.html">Timeline v.2</a></li>
+                            <li><a href="diff.html">Diff</a></li>
+                            <li><a href="idle_timer.html">Idle timer</a></li>
+                            <li><a href="spinners.html">Spinners</a></li>
+                            <li><a href="tinycon.html">Live favicon</a></li>
+                            <li><a href="google_maps.html">Google maps</a></li>
+                            <li><a href="code_editor.html">Code editor</a></li>
+                            <li><a href="modal_window.html">Modal window</a></li>
+                            <li><a href="forum_main.html">Forum view</a></li>
+                            <li><a href="validation.html">Validation</a></li>
+                            <li><a href="tree_view.html">Tree view</a></li>
+                            <li><a href="chat_view.html">Chat view</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="icons.html">Icons</a></li>
+                            <li><a href="draggable_panels.html">Draggable Panels</a></li>
+                            <li><a href="buttons.html">Buttons</a></li>
+                            <li><a href="video.html">Video</a></li>
+                            <li><a href="tabs_panels.html">Tabs & Panels</a></li>
+                            <li><a href="notifications.html">Notifications & Tooltips</a></li>
+                            <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="table_basic.html">Static Tables</a></li>
+                            <li><a href="table_data_tables.html">Data Tables</a></li>
+                            <li><a href="jq_grid.html">jqGrid</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
+                            <li><a href="carousel.html">Bootstrap Carusela</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Third Level <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Third Level Item</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li><a href="#">Second Level Item</a></li>
+                            <li>
+                                <a href="#">Second Level Item</a></li>
+                            <li>
+                                <a href="#">Second Level Item</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
+                    </li>
+                    <li class="landing_link">
+                        <a target="_blank" href="Landing_page/index.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
+                    </li>
+                    <li class="special_link">
+                        <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="${base}/bootstrap/image/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="${base}/bootstrap/image/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="${base}/bootstrap/image/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+                <li>
+                    <a class="right-sidebar-toggle">
+                        <i class="fa fa-tasks"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+                <div class="row  border-bottom white-bg dashboard-header">
+
+                    <div class="col-sm-3">
+                        <h2>Welcome Amelia</h2>
+                        <small>You have 42 messages and 6 notifications.</small>
+                        <ul class="list-group clear-list m-t">
+                            <li class="list-group-item fist-item">
+                                <span class="pull-right">
+                                    09:00 pm
+                                </span>
+                                <span class="label label-success">1</span> Please contact me
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    10:16 am
+                                </span>
+                                <span class="label label-info">2</span> Sign a contract
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    08:22 pm
+                                </span>
+                                <span class="label label-primary">3</span> Open new shop
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    11:06 pm
+                                </span>
+                                <span class="label label-default">4</span> Call back to Sylvia
+                            </li>
+                            <li class="list-group-item">
+                                <span class="pull-right">
+                                    12:00 am
+                                </span>
+                                <span class="label label-primary">5</span> Write a letter to Sandra
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="flot-chart dashboard-chart">
+                            <div class="flot-chart-content" id="flot-dashboard-chart"></div>
+                        </div>
+                        <div class="row text-left">
+                            <div class="col-xs-4">
+                                <div class=" m-l-md">
+                                <span class="h4 font-bold m-t block">$ 406,100</span>
+                                <small class="text-muted m-b block">Sales marketing report</small>
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="h4 font-bold m-t block">$ 150,401</span>
+                                <small class="text-muted m-b block">Annual sales revenue</small>
+                            </div>
+                            <div class="col-xs-4">
+                                <span class="h4 font-bold m-t block">$ 16,822</span>
+                                <small class="text-muted m-b block">Half-year revenue margin</small>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="statistic-box">
+                        <h4>
+                            Project Beta progress
+                        </h4>
+                        <p>
+                            You have two project with not compleated task.
+                        </p>
+                            <div class="row text-center">
+                                <div class="col-lg-6">
+                                    <canvas id="polarChart" width="80" height="80"></canvas>
+                                    <h5 >Kolter</h5>
+                                </div>
+                                <div class="col-lg-6">
+                                    <canvas id="doughnutChart" width="78" height="78"></canvas>
+                                    <h5 >Maxtor</h5>
+                                </div>
+                            </div>
+                            <div class="m-t">
+                                <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content">
+                        <div class="row">
+                        <div class="col-lg-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>New data for the report</h5> <span class="label label-primary">IN+</span>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Config option 1</a>
+                                            </li>
+                                            <li><a href="#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content">
+                                    <div>
+
+                                        <div class="pull-right text-right">
+
+                                            <span class="bar_dashboard">5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1</span>
+                                            <br/>
+                                            <small class="font-bold">$ 20 054.43</small>
+                                        </div>
+                                        <h4>NYS report new data!
+                                            <br/>
+                                            <small class="m-r"><a href="graph_flot.html"> Check the stock price! </a> </small>
+                                        </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Read below comments and tweets</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Config option 1</a>
+                                            </li>
+                                            <li><a href="#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content no-padding">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="#">@Alan Marry</a> I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="#">@Stock Man</a> Check this stock chart. This price is crazy! </p>
+                                            <div class="text-center m">
+                                                <span id="sparkline8"></span>
+                                            </div>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 hours ago</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="#">@Kevin Smith</a> Lorem ipsum unknown printer took a galley </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago</small>
+                                        </li>
+                                        <li class="list-group-item ">
+                                            <p><a class="text-info" href="#">@Jonathan Febrick</a> The standard chunk of Lorem Ipsum</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 hour ago</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="#">@Alan Marry</a> I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1 minuts ago</small>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <p><a class="text-info" href="#">@Kevin Smith</a> Lorem ipsum unknown printer took a galley </p>
+                                            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2 minuts ago</small>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-lg-4">
+                                <div class="ibox float-e-margins">
+                                    <div class="ibox-title">
+                                        <h5>Your daily feed</h5>
+                                        <div class="ibox-tools">
+                                            <span class="label label-warning-light">10 Messages</span>
+                                           </div>
+                                    </div>
+                                    <div class="ibox-content">
+
+                                        <div>
+                                            <div class="feed-activity-list">
+
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/profile.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">5m ago</small>
+                                                        <strong>Monica Smith</strong> posted a new blog. <br>
+                                                        <small class="text-muted">Today 5:60 pm - 12.06.2014</small>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/a2.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">2h ago</small>
+                                                        <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                                        <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/a3.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">2h ago</small>
+                                                        <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br>
+                                                        <small class="text-muted">2 days ago at 8:30am</small>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/a4.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right text-navy">5h ago</small>
+                                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                                        <div class="actions">
+                                                            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                                            <a class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/a5.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">2h ago</small>
+                                                        <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                                        <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                                        <div class="well">
+                                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                            Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                        </div>
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/profile.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">23h ago</small>
+                                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                                    </div>
+                                                </div>
+                                                <div class="feed-element">
+                                                    <a href="profile.html" class="pull-left">
+                                                        <img alt="image" class="img-circle" src="${base}/bootstrap/image/a7.jpg">
+                                                    </a>
+                                                    <div class="media-body ">
+                                                        <small class="pull-right">46h ago</small>
+                                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button class="btn btn-primary btn-block m-t"><i class="fa fa-arrow-down"></i> Show More</button>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        <div class="col-lg-4">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>Alpha project</h5>
+                                    <div class="ibox-tools">
+                                        <a class="collapse-link">
+                                            <i class="fa fa-chevron-up"></i>
+                                        </a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                            <i class="fa fa-wrench"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-user">
+                                            <li><a href="#">Config option 1</a>
+                                            </li>
+                                            <li><a href="#">Config option 2</a>
+                                            </li>
+                                        </ul>
+                                        <a class="close-link">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="ibox-content ibox-heading">
+                                    <h3>You have meeting today!</h3>
+                                    <small><i class="fa fa-map-marker"></i> Meeting is on 6:00am. Check your schedule to see detail.</small>
+                                </div>
+                                <div class="ibox-content inspinia-timeline">
+
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-briefcase"></i>
+                                                6:00 am
+                                                <br/>
+                                                <small class="text-navy">2 hour ago</small>
+                                            </div>
+                                            <div class="col-xs-7 content no-top-border">
+                                                <p class="m-b-xs"><strong>Meeting</strong></p>
+
+                                                <p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the
+                                                    sale.</p>
+
+                                                <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-file-text"></i>
+                                                7:00 am
+                                                <br/>
+                                                <small class="text-navy">3 hour ago</small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>Send documents to Mike</strong></p>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-coffee"></i>
+                                                8:00 am
+                                                <br/>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>Coffee Break</strong></p>
+                                                <p>
+                                                    Go to shop and find some products.
+                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-phone"></i>
+                                                11:00 am
+                                                <br/>
+                                                <small class="text-navy">21 hour ago</small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>Phone with Jeronimo</strong></p>
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-user-md"></i>
+                                                09:00 pm
+                                                <br/>
+                                                <small>21 hour ago</small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>Go to the doctor dr Smith</strong></p>
+                                                <p>
+                                                    Find some issue and go to doctor.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="row">
+                                            <div class="col-xs-3 date">
+                                                <i class="fa fa-comments"></i>
+                                                12:50 pm
+                                                <br/>
+                                                <small class="text-navy">48 hour ago</small>
+                                            </div>
+                                            <div class="col-xs-7 content">
+                                                <p class="m-b-xs"><strong>Chat with Monica and Sandra</strong></p>
+                                                <p>
+                                                    Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                </div>
+                <div class="footer">
+                    <div class="pull-right">
+                        10GB of <strong>250GB</strong> Free.
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> Example Company &copy; 2014-2015
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="small-chat-box fadeInRight animated">
+
+            <div class="heading" draggable="true">
+                <small class="chat-date pull-right">
+                    02.19.2015
+                </small>
+                Small chat
+            </div>
+
+            <div class="content">
+
+                <div class="left">
+                    <div class="author-name">
+                        Monica Jackson <small class="chat-date">
+                        10:02 am
+                    </small>
+                    </div>
+                    <div class="chat-message active">
+                        Lorem Ipsum is simply dummy text input.
+                    </div>
+
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        Mick Smith
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        Lorem Ipsum is simpl.
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Alice Novak
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        Check this stock char.
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="author-name">
+                        Anna Lamson
+                        <small class="chat-date">
+                            11:24 am
+                        </small>
+                    </div>
+                    <div class="chat-message">
+                        The standard chunk of Lorem Ipsum
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="author-name">
+                        Mick Lane
+                        <small class="chat-date">
+                            08:45 pm
+                        </small>
+                    </div>
+                    <div class="chat-message active">
+                        I belive that. Lorem Ipsum is simply dummy text.
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="form-chat">
+                <div class="input-group input-group-sm"><input type="text" class="form-control"> <span class="input-group-btn"> <button
+                        class="btn btn-primary" type="button">Send
+                </button> </span></div>
+            </div>
+
+        </div>
+        <div id="small-chat">
+
+            <span class="badge badge-warning pull-right">5</span>
+            <a class="open-small-chat">
+                <i class="fa fa-comments"></i>
+
+            </a>
+        </div>
+        <div id="right-sidebar">
+            <div class="sidebar-container">
+
+                <ul class="nav nav-tabs navs-3">
+
+                    <li class="active"><a data-toggle="tab" href="#tab-1">
+                        Notes
+                    </a></li>
+                    <li><a data-toggle="tab" href="#tab-2">
+                        Projects
+                    </a></li>
+                    <li class=""><a data-toggle="tab" href="#tab-3">
+                        <i class="fa fa-gear"></i>
+                    </a></li>
+                </ul>
+
+                <div class="tab-content">
+
+
+                    <div id="tab-1" class="tab-pane active">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-comments-o"></i> Latest Notes</h3>
+                            <small><i class="fa fa-tim"></i> You have 10 new message.</small>
+                        </div>
+
+                        <div>
+
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a1.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+
+                                        There are many variations of passages of Lorem Ipsum available.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a2.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        The point of using Lorem Ipsum is that it has a more-or-less normal.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        Mevolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a4.jpg">
+                                    </div>
+
+                                    <div class="media-body">
+                                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a8.jpg">
+                                    </div>
+                                    <div class="media-body">
+
+                                        All the Lorem Ipsum generators on the Internet tend to repeat.
+                                        <br>
+                                        <small class="text-muted">Today 4:21 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a7.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                        <br>
+                                        <small class="text-muted">Yesterday 2:45 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a3.jpg">
+
+                                        <div class="m-t-xs">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below.
+                                        <br>
+                                        <small class="text-muted">Yesterday 1:10 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="sidebar-message">
+                                <a href="#">
+                                    <div class="pull-left text-center">
+                                        <img alt="image" class="img-circle message-avatar" src="${base}/bootstrap/image/a4.jpg">
+                                    </div>
+                                    <div class="media-body">
+                                        Uncover many web sites still in their infancy. Various versions have.
+                                        <br>
+                                        <small class="text-muted">Monday 8:37 pm</small>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="tab-2" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3> <i class="fa fa-cube"></i> Latest projects</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <ul class="sidebar-list">
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Business valuation</h4>
+                                    It is a long established fact that a reader will be distracted.
+
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 22%;" class="progress-bar progress-bar-warning"></div>
+                                    </div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Contract with Company </h4>
+                                    Many desktop publishing packages and web page editors.
+
+                                    <div class="small">Completion with: 48%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 48%;" class="progress-bar"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="small pull-right m-t-xs">9 hours ago</div>
+                                    <h4>Meeting</h4>
+                                    By the readable content of a page when looking at its layout.
+
+                                    <div class="small">Completion with: 14%</div>
+                                    <div class="progress progress-mini">
+                                        <div style="width: 14%;" class="progress-bar progress-bar-info"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label label-primary pull-right">NEW</span>
+                                    <h4>The generated</h4>
+                                    <!--<div class="small pull-right m-t-xs">9 hours ago</div>-->
+                                    There are many variations of passages of Lorem Ipsum available.
+                                    <div class="small">Completion with: 22%</div>
+                                    <div class="small text-muted m-t-xs">Project end: 4:00 pm - 12.06.2014</div>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div id="tab-3" class="tab-pane">
+
+                        <div class="sidebar-title">
+                            <h3><i class="fa fa-gears"></i> Settings</h3>
+                            <small><i class="fa fa-tim"></i> You have 14 projects. 10 not completed.</small>
+                        </div>
+
+                        <div class="setings-item">
+                    <span>
+                        Show notifications
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example">
+                                    <label class="onoffswitch-label" for="example">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Disable Chat
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" checked class="onoffswitch-checkbox" id="example2">
+                                    <label class="onoffswitch-label" for="example2">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Enable history
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example3">
+                                    <label class="onoffswitch-label" for="example3">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Show charts
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example4">
+                                    <label class="onoffswitch-label" for="example4">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Offline users
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example5">
+                                    <label class="onoffswitch-label" for="example5">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Global search
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" checked name="collapsemenu" class="onoffswitch-checkbox" id="example6">
+                                    <label class="onoffswitch-label" for="example6">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setings-item">
+                    <span>
+                        Update everyday
+                    </span>
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="collapsemenu" class="onoffswitch-checkbox" id="example7">
+                                    <label class="onoffswitch-label" for="example7">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-content">
+                            <h4>Settings</h4>
+                            <div class="small">
+                                I belive that. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                And typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+   
+    <@p.flotjs/>
+     <script src="${base}/view/index.js?v=1.1"></script>

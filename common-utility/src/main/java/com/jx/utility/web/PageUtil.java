@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class PageUtil<E> {
 	
-	private static final int NUM_DEFAULT_PAGE = 20;  //默认每页大小
+	public static final int NUM_DEFAULT_PAGE = 20;  //默认每页大小
 	private List<E> rows;//分页结果
 	private int start; //分页开始记录行
 	private int end;   //分页结束记录行

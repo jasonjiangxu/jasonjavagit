@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jx.sales.mapper.CustMapper" >
+  <resultMap id="custMap" type="tcust" >
+     <id column="C_ID" property="id" jdbcType="VARCHAR" />
+     <result column="C_REMARK" property="remark" jdbcType="VARCHAR" />
+     <result column="C_CREATE_USER" property="createUser" jdbcType="VARCHAR" />
+     <result column="C_UPDATE_USER" property="updateUser" jdbcType="VARCHAR" />
+     <result column="C_CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+     <result column="C_UPDATE_TIME" property="updateTime" jdbcType="TIMESTAMP" />
+     <result column="C_VERSION" property="version" jdbcType="BIGINT" />
+     
+     <result column="C_CODE" property="code" jdbcType="VARCHAR" />
+     <result column="C_CATEGORY" property="category" jdbcType="VARCHAR" />
+     <result column="C_STATUS" property="status" jdbcType="VARCHAR" />
+     <result column="C_ORIGIN" property="origin" jdbcType="VARCHAR" />
+     <result column="C_ISVIP" property="vip" jdbcType="CHAR" />
+     <result column="C_ISINPOOL" property="inpool" jdbcType="CHAR" />
+     <result column="C_ISIMPORT" property="isimport" jdbcType="CHAR" />
+     <result column="C_SORT" property="sort" jdbcType="BIGINT" />
+  </resultMap> 
+  
+  <sql id="columnlist" >
+    C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME,C_VERSION, C_CODE,C_CATEGORY,C_STATUS,C_ORIGIN,C_ISVIP,C_ISINPOOL,C_ISIMPORT,C_SORT
+  </sql>
+  
+  <!-- 保存菜单 -->
+  <insert id="insertCust" parameterType="tcust">
+  	<![CDATA[
+    insert into T_CUST (C_ID,C_REMARK,C_CREATE_USER, C_CREATE_TIME, C_DEL,C_VERSION,C_CODE,C_CATEGORY,C_STATUS,C_ORIGIN,C_ISVIP,C_ISINPOOL,C_SORT,C_ISIMPORT)
+    values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},'N',1,
+    #{code,jdbcType=VARCHAR},#{category,jdbcType=VARCHAR},#{status,jdbcType=VARCHAR},#{origin,jdbcType=VARCHAR},#{vip,jdbcType=CHAR},
+    #{inpool,jdbcType=CHAR},#{sort,jdbcType=BIGINT},#{isimport,jdbcType=CHAR})
+    ]]>
+  </insert>
+  
+  <!-- 更新菜单 -->
+  <update id="updateCust" parameterType="tcust">
+  	 update T_CUST
+  	 <set>
+  	 	<if test="remark!=null">C_REMARK = #{remark,jdbcType=VARCHAR},</if>
+  	 	<if test="delFlg!=null">C_DEL = #{delFlg,jdbcType=CHAR},</if>
+  	 	<if test="category!=null">C_CATEGORY = #{category,jdbcType=VARCHAR},</if>
+  	 	<if test="status!=null">C_STATUS = #{status,jdbcType=VARCHAR},</if>
+  	 	<if test="origin!=null">C_ORIGIN = #{origin,jdbcType=VARCHAR},</if>
+  	 	<if test="vip!=null">C_ISVIP = #{vip,jdbcType=CHAR},</if>
+  	 	<if test="inpool!=null">C_ISINPOOL =  #{inpool,jdbcType=CHAR},</if>
+  	 	<if test="sort!=null">C_SORT = #{sort,jdbcType=BIGINT},</if>
+  	 	<if test="isimport!=null">C_ISIMPORT = #{isimport,jdbcType=CHAR},</if>
+  	 	C_VERSION = #{newversion,jdbcType=BIGINT},
+  	 	C_UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+  	 	C_UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+  	 </set>
+  	<where>
+  		C_ID=#{id,jdbcType=VARCHAR} and C_VERSION=#{version,jdbcType=BIGINT}
+  	</where>
+  </update>
+  
+   <!-- 查询菜单 -->
+  <select id="findCustsByPage" resultMap="custMap">
+  		select  <include refid="columnlist"/> 
+  		from T_CUST where C_DEL='N'
+  </select>
+  
+</mapper>

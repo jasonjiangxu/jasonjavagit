@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<title>CMS系统</title>
+		<title>销售系统</title>
 		<#include "headStyle.ftl">
 	</head>
-    <body>
-      <!-- BEGIN PAGE -->
-		<div id="box-content">
-     		 <!-- BEGIN PAGE CONTAINER-->
-				<!-- END PAGE HEADER-->
-				<!-- BEGIN PAGE CONTENT-->
-				${body}
-				<!-- END PAGE CONTENT-->
-      	</div>
-		<!-- END PAGE -->
+    <body  class="page-header-fixed">
+    	${body}
 	</body>
 </html>

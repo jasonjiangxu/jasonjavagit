@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
 
+import net.sf.json.JSONObject;
+
 /**
  * 
  * @ClassName: BaseController 
@@ -71,5 +73,10 @@ public class BaseController {
 		mav.addObject("ex", ex);
 		mav.addObject("base", base);
 		return mav;
+	}
+
+	public String objToJson(Object obj) {
+		JSONObject jo=JSONObject.fromObject(obj);
+		return jo.toString();
 	}
 }

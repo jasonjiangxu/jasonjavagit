@@ -6,33 +6,70 @@
     <script src="${base}/plugin/flot/jquery.flot.spline.js"></script>
     <script src="${base}/plugin/flot/jquery.flot.resize.js"></script>
     <script src="${base}/plugin/flot/jquery.flot.pie.js"></script>
+    <script src="${base}/plugin/flot/jquery.flot.symbol.js"></script>
+    <script src="${base}/plugin/flot/jquery.flot.time.js"></script>
     <!-- Peity -->
     <script src="${base}/plugin/peity/jquery.peity.min.js"></script>
     <!-- Sparkline -->
     <script src="${base}/plugin/sparkline/jquery.sparkline.min.js"></script>
     <!-- ChartJS-->
     <script src="${base}/plugin/chartJs/Chart.min.js"></script>
+    
+    <script src="${base}/plugin/easypiechart/jquery.easypiechart.js"></script>
 </#macro>
 
-<!-- 引入地图js -->
-<#macro jqVmap>
-    <#-- <link href="${base}/assets/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+<!-- 引入Easyuijs -->
+<#macro easyuijs>
+	 <link href="${base}/plugin/easyui/themes/gray/easyui.css" rel="stylesheet"/>
+	 <link href="${base}/plugin/easyui/themes/icon.css" rel="stylesheet"/>
+	 <link href="${base}/plugin/easyui/themes/color.css" rel="stylesheet"/>
 	
-	<script src="${base}/assets/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/maps/jquery.vmap.russia.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/maps/jquery.vmap.europe.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/maps/jquery.vmap.germany.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/maps/jquery.vmap.usa.js" type="text/javascript"></script>
-    <script src="${base}/assets/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>-->
+	<script src="${base}/plugin/easyui/jquery.easyui.min.js"></script>
+	<script src="${base}/plugin/easyui/locale/easyui-lang-zh_CN.js"></script>
 </#macro>
 
-<!-- 引入表格js -->
-<#macro dataTable>
-    <script type="text/javascript" src="${base}/assets/data-tables/jquery.dataTables.js"></script>
-    <script type="text/javascript" src="${base}/assets/data-tables/DT_bootstrap.js"></script>
+<#macro stepsjs>
+	<link href="${base}/plugin/steps/jquery.steps.css" rel="stylesheet">
+	<script src="${base}/plugin/steps/jquery.steps.min.js"></script>
 </#macro>
 
+<!-- 消息通知 -->
+<#macro messageBox>
+	 <h2>欢迎使用</h2>
+    <small>你有42条信息6个通知.</small>
+    <ul class="list-group clear-list m-t">
+        <li class="list-group-item fist-item">
+            <span class="pull-right">
+               	 上午09:00
+            </span>
+            <span class="label label-success">1</span>请联系我
+        </li>
+        <li class="list-group-item">
+            <span class="pull-right">
+                	下午10:16
+            </span>
+            <span class="label label-info">2</span> 签订合同
+        </li>
+        <li class="list-group-item">
+            <span class="pull-right">
+                	晚上08:22
+            </span>
+            <span class="label label-primary">3</span> 开会
+        </li>
+        <li class="list-group-item">
+            <span class="pull-right">
+               	 晚上11:06
+            </span>
+            <span class="label label-default">4</span>写工作报告
+        </li>
+        <li class="list-group-item">
+            <span class="pull-right">
+               	 晚上12:00
+            </span>
+            <span class="label label-primary">5</span>下班回家睡觉
+        </li>
+    </ul>
+</#macro>
 
 <!-- 分页查询 -->
 <#macro paging url pageobj>

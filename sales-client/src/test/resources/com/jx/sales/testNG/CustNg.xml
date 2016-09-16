@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.jx.sales.testNG.CustTest">
+      	<methods>
+      		<include name="testSaveCust" />
+      		<include name="testFindCust" />
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test3-->
+</suite> <!-- Suite -->

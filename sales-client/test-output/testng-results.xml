@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="515" started-at="2016-09-15T23:49:31Z" finished-at="2016-09-15T23:49:32Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="515" started-at="2016-09-15T23:49:31Z" finished-at="2016-09-15T23:49:32Z">
+      <class name="com.jx.sales.testNG.CustTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="beforeSuite" is-config="true" duration-ms="2102" started-at="2016-09-16T07:49:29Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="testSaveCust()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="testSaveCust" duration-ms="259" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSaveCust -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="testFindCust()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="testFindCust" duration-ms="236" started-at="2016-09-16T07:49:31Z" finished-at="2016-09-16T07:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindCust -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:32Z" finished-at="2016-09-16T07:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:32Z" finished-at="2016-09-16T07:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:32Z" finished-at="2016-09-16T07:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jx.sales.testNG.CustTest@7d9d1a19]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-09-16T07:49:32Z" finished-at="2016-09-16T07:49:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.jx.sales.testNG.CustTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

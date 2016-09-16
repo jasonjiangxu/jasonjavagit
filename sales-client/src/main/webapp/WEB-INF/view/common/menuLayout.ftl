@@ -6,14 +6,14 @@
                             <img alt="image" class="img-circle" src="${base}/bootstrap/image/profile_small.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">姜旭</strong>
+                             </span> <span class="text-muted text-xs block">分行经理<b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="mailbox.html">Mailbox</a></li>
+                                <li><a href="profile.html">详情</a></li>
+                                <li><a href="contacts.html">联系方式</a></li>
+                                <li><a href="mailbox.html">邮箱</a></li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">Logout</a></li>
+                                <li><a href="login.html">推出</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
@@ -21,136 +21,54 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">客户管理</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="active"><a href="index.html">Dashboard v.1</a></li>
-                            <li ><a href="dashboard_2.html">Dashboard v.2</a></li>
-                            <li ><a href="dashboard_3.html">Dashboard v.3</a></li>
-                            <li ><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                            <li class="active"><a href="${base}/cust/mycustlist">我的客户</a></li>
+                            <li ><a href="dashboard_2.html">店组客户</a></li>
+                            <li ><a href="dashboard_3.html">潜客列表</a></li>
+                            <li ><a href="dashboard_4_1.html">公客列表</a></li>
+                            <li ><a href="dashboard_4_1.html">导入客列表</a></li>
+                            <li ><a href="dashboard_4_1.html">成交客户</a></li>
+                            <li ><a href="dashboard_4_1.html">无效客户</a></li>
+                            <li ><a href="dashboard_4_1.html">客户跟进</a></li>
+                            <li ><a href="dashboard_4_1.html">客户带看</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span> <span class="label label-primary pull-right">NEW</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">房源管理</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="graph_flot.html">Flot Charts</a></li>
-                            <li><a href="graph_morris.html">Morris.js Charts</a></li>
-                            <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
-                            <li><a href="graph_chartjs.html">Chart.js</a></li>
-                            <li><a href="graph_peity.html">Peity Charts</a></li>
-                            <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+                            <li><a href="graph_flot.html">有效房源</a></li>
+                            <li><a href="graph_morris.html">潜房列表</a></li>
+                            <li><a href="graph_rickshaw.html">我的房源</a></li>
+                            <li><a href="graph_chartjs.html">共享池房源</a></li>
+                            <li><a href="graph_peity.html">店租房源</a></li>
+                            <li><a href="graph_sparkline.html">收藏房源</a></li>
+                            <li><a href="graph_sparkline.html">推荐房源</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning pull-right">16/24</span></a>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">邮件 </span><span class="label label-warning pull-right">16/24</span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="mailbox.html">Inbox</a></li>
-                            <li><a href="mail_detail.html">Email view</a></li>
-                            <li><a href="mail_compose.html">Compose email</a></li>
-                            <li><a href="email_template.html">Email templates</a></li>
+                            <li><a href="mailbox.html">收件箱</a></li>
+                            <li><a href="mail_detail.html">Email查看</a></li>
+                            <li><a href="mail_compose.html">发邮件</a></li>
+                            <li><a href="email_template.html">邮件模版</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span> </a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">员工工作量报表</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="form_basic.html">Basic form</a></li>
-                            <li><a href="form_advanced.html">Advanced Plugins</a></li>
-                            <li><a href="form_wizard.html">Wizard</a></li>
-                            <li><a href="form_file_upload.html">File Upload</a></li>
-                            <li><a href="form_editors.html">Text Editor</a></li>
+                            <li><a href="form_basic.html">员工工作量</a></li>
+                            <li><a href="form_advanced.html">店组工作量</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info pull-right">NEW</span></a>
+                        <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">辅助工具</span><span class="label label-info pull-right">NEW</span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="toastr_notifications.html">Notification</a></li>
-                            <li><a href="nestable_list.html">Nestable list</a></li>
-                            <li><a href="agile_board.html">Agile board</a></li>
-                            <li><a href="timeline_2.html">Timeline v.2</a></li>
-                            <li><a href="diff.html">Diff</a></li>
-                            <li><a href="idle_timer.html">Idle timer</a></li>
-                            <li><a href="spinners.html">Spinners</a></li>
-                            <li><a href="tinycon.html">Live favicon</a></li>
-                            <li><a href="google_maps.html">Google maps</a></li>
-                            <li><a href="code_editor.html">Code editor</a></li>
-                            <li><a href="modal_window.html">Modal window</a></li>
-                            <li><a href="forum_main.html">Forum view</a></li>
-                            <li><a href="validation.html">Validation</a></li>
-                            <li><a href="tree_view.html">Tree view</a></li>
-                            <li><a href="chat_view.html">Chat view</a></li>
+                            <li><a href="toastr_notifications.html">留言反馈</a></li>
+                            <li><a href="nestable_list.html">日记事</a></li>
+                            <li><a href="agile_board.html">备忘录</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="typography.html">Typography</a></li>
-                            <li><a href="icons.html">Icons</a></li>
-                            <li><a href="draggable_panels.html">Draggable Panels</a></li>
-                            <li><a href="buttons.html">Buttons</a></li>
-                            <li><a href="video.html">Video</a></li>
-                            <li><a href="tabs_panels.html">Tabs & Panels</a></li>
-                            <li><a href="notifications.html">Notifications & Tooltips</a></li>
-                            <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="table_basic.html">Static Tables</a></li>
-                            <li><a href="table_data_tables.html">Data Tables</a></li>
-                            <li><a href="jq_grid.html">jqGrid</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
-                            <li><a href="carousel.html">Bootstrap Carusela</a></li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li>
-                                <a href="#">Third Level <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level Item</a>
-                                    </li>
-
-                                </ul>
-                            </li>
-                            <li><a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                            <li>
-                                <a href="#">Second Level Item</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info pull-right">62</span></a>
-                    </li>
-                    <li class="landing_link">
-                        <a target="_blank" href="Landing_page/index.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning pull-right">NEW</span></a>
-                    </li>
-                    <li class="special_link">
-                        <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
                     </li>
                 </ul>
 

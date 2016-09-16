@@ -1,5 +1,7 @@
 package com.jx.utility.common_utility.testNG;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -10,37 +12,39 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 public abstract class BaseTestNG {
+	
+	private ApplicationContext ctx;
+	
 	 @BeforeSuite
 	  public void beforeSuite() {
-		  System.out.println("@BeforeSuite");
+		 ctx = new FileSystemXmlApplicationContext( "classpath:applicationContext.xml");
 	  }
 	  @BeforeTest
 	  public void beforeTest() {
-		  System.out.println("@BeforeTest");
 	  }
 	  @BeforeClass
 	  public void beforeClass() {
-		  System.out.println("@BeforeClass");
 	  }
 	  
 	  @AfterClass
 	  public void afterClass() {
-		  System.out.println("@AfterClass");
 	  }
 	  @AfterTest
 	  public void afterTest() {
-		  System.out.println("@AfterTest");
 	  }
 	  @AfterSuite
 	  public void afterSuite() {
-		  System.out.println("@AfterSuite");
 	  }
 	  @BeforeMethod
 	  public void BeforeMethod() {
-		  System.out.println("@BeforeMethod");
 	  }
 	  @AfterMethod
 	  public void AfterMethod() {
-		  System.out.println("@AfterMethod");
 	  }
+	public ApplicationContext getCtx() {
+		return ctx;
+	}
+	public void setCtx(ApplicationContext ctx) {
+		this.ctx = ctx;
+	}
 }

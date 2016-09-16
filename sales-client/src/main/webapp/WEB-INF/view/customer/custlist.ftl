@@ -4,7 +4,7 @@
 	<table id="mycust_table"></table>
 </div>
 <div id="addcustdiv" class="easyui-window" title="新增客户" 
-	data-options="modal:true,closed:true,iconCls:'icon-save',minimizable:false" 
+	data-options="modal:true,closed:true,iconCls:'icon-save',minimizable:false,draggable:false,closable:false" 
 	style="width:95%;height:600px;padding:10px;">
 </div>	
 <script>

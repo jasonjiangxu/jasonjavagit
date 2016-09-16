@@ -1,120 +1,55 @@
  <#import "../macro/pagemacro.ftl" as p>
 <div class="wrapper wrapper-content animated fadeInRight">
 <div class="row">
-                <div class="col-lg-5">
-                    <div class="jumbotron">
-                        <h1>Steps</h1>
-                        <p>Smart UI component which allows you to easily create wizard-like interfaces.</p>
-                        <p><a href="http://www.jquery-steps.com/GettingStarted" target="_blank" class="btn btn-primary btn-lg" role="button">Learn more about jQuery Steps</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>Basic Wizzard</h5>
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#">Config option 1</a>
-                                </li>
-                                <li><a href="#">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ibox-content">
-                        <p>
-                            This is basic example of Step
-                        </p>
-                        <div id="wizard">
-                            <h1>First Step</h1>
-                            <div class="step-content">
-                                <div class="text-center m-t-md">
-                                <h2>Hello in Step 1</h2>
-                                <p>
-                                    This is the first content.
-                                </p>
-                                </div>
-                            </div>
-
-                            <h1>Second Step</h1>
-                            <div class="step-content">
-                                <div class="text-center m-t-md">
-                                    <h2>This is step 2</h2>
-                                    <p>
-                                        This content is diferent than the first one.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <h1>Third Step</h1>
-                            <div class="step-content">
-                                <div class="text-center m-t-md">
-                                    <h2>This is step 3</h2>
-                                    <p>
-                                        This is last content.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-<div class="row">
                 <div class="col-lg-12">
                     <div class="ibox">
                         <div class="ibox-content">
-                            <h2>
-                                Validation Wizard Form
-                            </h2>
-                            <p>
-                                This example show how to use Steps with jQuery Validation plugin.
-                            </p>
-
                             <form id="form" action="#" class="wizard-big">
-                                <h1>Account</h1>
+                                <h1>基本信息</h1>
                                 <fieldset>
-                                    <h2>Account Information</h2>
                                     <div class="row">
-                                        <div class="col-lg-8">
+                                        <div class="col-lg-6">
                                             <div class="form-group">
-                                                <label>Username *</label>
-                                                <input id="userName" name="userName" type="text" class="form-control required">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Password *</label>
-                                                <input id="password" name="password" type="text" class="form-control required">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Confirm Password *</label>
-                                                <input id="confirm" name="confirm" type="text" class="form-control required">
+                                                <label class="col-sm-2">客户编号<em>*</em></label>
+                                    			<div class="col-sm-10">
+                                    				<input type="email" placeholder="客户编号" class="form-control" value="C0001"> 
+                                    				<span class="help-block m-b-none">这里是自动生成,不需要输入.</span>
+                                    			</div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4">
-                                            <div class="text-center">
-                                                <div style="margin-top: 20px">
-                                                    <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
-                                                </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">客户编号<em>*</em></label>
+                                    			<div class="col-lg-10">
+                                    				<input type="email" placeholder="客户编号" class="form-control" value="C0001"> 
+                                    				<span class="help-block m-b-none">这里是自动生成,不需要输入.</span>
+                                    			</div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">客户编号<em>*</em></label>
+                                    			<div class="col-lg-10">
+                                    				<input type="email" placeholder="客户编号" class="form-control" value="C0001"> 
+                                    				<span class="help-block m-b-none">这里是自动生成,不需要输入.</span>
+                                    			</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">客户编号<em>*</em></label>
+                                    			<div class="col-lg-10">
+                                    				<input type="email" placeholder="客户编号" class="form-control" value="C0001"> 
+                                    				<span class="help-block m-b-none">这里是自动生成,不需要输入.</span>
+                                    			</div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </fieldset>
-                                <h1>Profile</h1>
+                                <h1>联系人信息</h1>
                                 <fieldset>
-                                    <h2>Profile Information</h2>
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="form-group">
@@ -139,14 +74,14 @@
                                     </div>
                                 </fieldset>
 
-                                <h1>Warning</h1>
+                                <h1>需求信息</h1>
                                 <fieldset>
                                     <div class="text-center" style="margin-top: 120px">
                                         <h2>You did it Man :-)</h2>
                                     </div>
                                 </fieldset>
 
-                                <h1>Finish</h1>
+                                <h1>完成</h1>
                                 <fieldset>
                                     <h2>Terms and Conditions</h2>
                                     <input id="acceptTerms" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms">I agree with the Terms and Conditions.</label>

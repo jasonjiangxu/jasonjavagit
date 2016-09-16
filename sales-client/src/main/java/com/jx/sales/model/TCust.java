@@ -6,7 +6,6 @@ import com.jx.core.model.BaseEntity;
 public class TCust extends BaseEntity{
 
 	private static final long serialVersionUID = 7309974087529603431L;
-
 	/* 客户编号  */
 	private String code;
 	/* 客户编码  */

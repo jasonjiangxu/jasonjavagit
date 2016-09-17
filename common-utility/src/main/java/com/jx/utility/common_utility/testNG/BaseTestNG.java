@@ -17,7 +17,7 @@ public abstract class BaseTestNG {
 	
 	 @BeforeSuite
 	  public void beforeSuite() {
-		 String[] xmlCfg = new String[] { "classpath:applicationContext.xml","classpath:spring-redis.xml"};
+		 String[] xmlCfg = new String[] { "classpath:applicationContext.xml"};
 		 ctx = new ClassPathXmlApplicationContext(xmlCfg);
 	  }
 	  @BeforeTest

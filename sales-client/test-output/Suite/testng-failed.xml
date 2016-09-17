@@ -5,19 +5,9 @@
     <classes>
       <class name="com.jx.sales.testNG.JedisTest">
         <methods>
-          <include name="testSaveJids"/>
+          <include name="testgetJids"/>
         </methods>
       </class> <!-- com.jx.sales.testNG.JedisTest -->
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.jx.sales.testNG.JedisTest">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="testSaveJids"/>
-        </methods>
-      </class> <!-- com.jx.sales.testNG.JedisTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

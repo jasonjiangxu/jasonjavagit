@@ -5,6 +5,7 @@
       <class name="com.jx.sales.testNG.JedisTest">
       	<methods>
       		<include name="testSaveJids" />
+      		<include name="testgetJids" />
       	</methods>
       </class>
     </classes>

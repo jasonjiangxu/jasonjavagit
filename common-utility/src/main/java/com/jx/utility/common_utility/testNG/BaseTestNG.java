@@ -1,7 +1,7 @@
 package com.jx.utility.common_utility.testNG;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -17,7 +17,8 @@ public abstract class BaseTestNG {
 	
 	 @BeforeSuite
 	  public void beforeSuite() {
-		 ctx = new FileSystemXmlApplicationContext( "classpath:applicationContext.xml");
+		 String[] xmlCfg = new String[] { "classpath:applicationContext.xml","classpath:spring-redis.xml"};
+		 ctx = new ClassPathXmlApplicationContext(xmlCfg);
 	  }
 	  @BeforeTest
 	  public void beforeTest() {

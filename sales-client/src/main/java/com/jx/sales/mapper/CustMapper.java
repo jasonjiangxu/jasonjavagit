@@ -13,5 +13,7 @@ public interface CustMapper {
 	
 	public int insertCust(TCust cust);
 	
+	public int updateCust(TCust cust);
+	
 	public List<TCust> findCustsByPage(@Param(value="page") Integer page, @Param(value="rows") Integer rows, @Param(value="condis") String[] condis,@Param(value="tm") TCust tc);
 }

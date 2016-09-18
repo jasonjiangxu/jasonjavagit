@@ -12,5 +12,6 @@ create table T_DICT(
    C_UPDATE_TIME datetime COMMENT '更新时间',
    C_DEL CHAR(1) NOT NULL COMMENT '删除标记 是否删除  Y是 N 否',
    C_VERSION BIGINT  NULL COMMENT '版本号',
-   C_SORT INT NULL COMMENT '排序'
+   C_SORT INT NULL COMMENT '排序',
+   C_SPELL VARCHAR(16) NULL COMMENT '拼音码'
 )COMMENT = '字典信息表';

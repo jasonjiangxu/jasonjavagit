@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.jx.manager.mapper.DicgMapper" >
+  <resultMap id="dictMap" type="tdict" >
+     <id column="C_ID" property="id" jdbcType="VARCHAR" />
+     <result column="C_REMARK" property="remark" jdbcType="VARCHAR" />
+     <result column="C_CREATE_USER" property="createUser" jdbcType="VARCHAR" />
+     <result column="C_UPDATE_USER" property="updateUser" jdbcType="VARCHAR" />
+     <result column="C_CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
+     <result column="C_UPDATE_TIME" property="updateTime" jdbcType="TIMESTAMP" />
+     <result column="C_VERSION" property="version" jdbcType="BIGINT" />
+     
+     <result column="C_CODE" property="code" jdbcType="VARCHAR" />
+     <result column="C_TYPE" property="type" jdbcType="VARCHAR" />
+     <result column="C_DEFAULT" property="isdefault" jdbcType="CHAR" />
+     <result column="C_NAME" property="name" jdbcType="VARCHAR" />
+     <result column="C_TAG" property="tag" jdbcType="VARCHAR" />
+     <result column="C_SPELL" property="spell" jdbcType="VARCHAR" />
+     <result column="C_SORT" property="sort" jdbcType="BIGINT" />
+  </resultMap> 
+  
+  <sql id="columnlist" >
+    C_ID,C_REMARK,C_CREATE_USER, C_UPDATE_USER, C_CREATE_TIME, C_UPDATE_TIME,C_VERSION, C_CODE,C_TYPE,C_DEFAULT,C_NAME,C_TAG,C_SPELL,C_SORT
+  </sql>
+  
+  <!-- 保存菜单 -->
+  <insert id="insertDict" parameterType="tdict">
+  	<![CDATA[
+    insert into T_DICT (C_ID,C_REMARK,C_CREATE_USER, C_CREATE_TIME, C_DEL,C_VERSION,C_CODE,C_TYPE,C_DEFAULT,C_NAME,C_TAG,C_SPELL,C_SORT)
+    values (#{id,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR},#{createUser,jdbcType=VARCHAR},#{createTime,jdbcType=TIMESTAMP},'N',1,
+    #{code,jdbcType=VARCHAR},#{type,jdbcType=VARCHAR},#{isdefault,jdbcType=CHAR},#{name,jdbcType=VARCHAR},#{tag,jdbcType=VARCHAR},
+    #{spell,jdbcType=VARCHAR},#{sort,jdbcType=BIGINT})
+    ]]>
+  </insert>
+  
+  <!-- 更新菜单 -->
+  <update id="updateDict" parameterType="tdict">
+  	 update T_DICT
+  	 <set>
+  	 	<if test="remark!=null">C_REMARK = #{remark,jdbcType=VARCHAR},</if>
+  	 	<if test="delFlg!=null">C_DEL = #{delFlg,jdbcType=CHAR},</if>
+  	 	<if test="code!=null">C_CODE = #{code,jdbcType=VARCHAR},</if>
+  	 	<if test="type!=null">C_TYPE = #{type,jdbcType=VARCHAR},</if>
+  	 	<if test="isdefault!=null">C_DEFAULT = #{isdefault,jdbcType=CHAR},</if>
+  	 	<if test="name!=null">C_NAME = #{name,jdbcType=VARCHAR},</if>
+  	 	<if test="tag!=null">C_TAG =  #{tag,jdbcType=VARCHAR},</if>
+  	 	<if test="spell!=null">C_SPELL =  #{spell,jdbcType=VARCHAR},</if>
+  	 	<if test="sort!=null">C_SORT = #{sort,jdbcType=BIGINT},</if>
+  	 	C_VERSION = #{newversion,jdbcType=BIGINT},
+  	 	C_UPDATE_USER = #{updateUser,jdbcType=VARCHAR},
+  	 	C_UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+  	 </set>
+  	<where>
+  		C_ID=#{id,jdbcType=VARCHAR} and C_VERSION=#{version,jdbcType=BIGINT}
+  	</where>
+  </update>
+  
+   <!-- 查询菜单 -->
+  <select id="findDictByCodeAndType" resultMap="custMap">
+  		select  <include refid="columnlist"/> 
+  		from T_DICT where C_CODE=#{code,jdbcType=VARCHAR} AND C_TYPE=#{type,jdbcType=VARCHAR} AND C_DEL='N' 
+  </select>
+  
+  <select id="findDictByType" resultMap="custMap">
+  		select  <include refid="columnlist"/> 
+  		from T_DICT where  C_TYPE=#{type,jdbcType=VARCHAR} AND C_DEL='N' 
+  </select>
+  
+   <select id="findDictLikeNameOrPy" resultMap="custMap">
+  		select  <include refid="columnlist"/> 
+  		from T_DICT where (C_NAME LIKE '%${nameOrPy}%' OR C_SPELL LIKE '%${nameOrPy}%') AND C_DEL='N' 
+  </select>
+</mapper>

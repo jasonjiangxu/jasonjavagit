@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+    <classes>
+      <class name="com.jx.sales.testNG.WebServiceTest">
+      	<methods>
+      		<include name="testWebService" />
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test3-->
+</suite> <!-- Suite -->

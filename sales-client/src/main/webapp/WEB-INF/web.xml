@@ -9,7 +9,7 @@
 	<!-- Spring ApplicationContext配置文件的路径,可使用通配符，用于后面的Spring Context Loader -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath*:applicationContext.xml</param-value>
+		<param-value>classpath*:applicationContext.xml,classpath*:spring-cxf.xml</param-value>
 	</context-param>
 	
 	<!--Spring ApplicationContext 载入 -->

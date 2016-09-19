@@ -3,11 +3,21 @@
 <suite name="Failed suite [Suite]">
   <test name="Test">
     <classes>
-      <class name="com.jx.sales.testNG.JedisTest">
+      <class name="com.jx.sales.testNG.WebServiceTest">
         <methods>
-          <include name="testgetJids"/>
+          <include name="testWebService"/>
         </methods>
-      </class> <!-- com.jx.sales.testNG.JedisTest -->
+      </class> <!-- com.jx.sales.testNG.WebServiceTest -->
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.jx.sales.testNG.WebServiceTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="testWebService"/>
+        </methods>
+      </class> <!-- com.jx.sales.testNG.WebServiceTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

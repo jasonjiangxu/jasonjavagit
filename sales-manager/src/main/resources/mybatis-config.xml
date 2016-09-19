@@ -19,6 +19,6 @@
     <setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
   </settings>
   <typeAliases>
-  	<typeAlias type="com.jx.sales.model.TDict" alias="tdict"/>
+  	<typeAlias type="com.jx.manager.model.TDict" alias="tdict"/>
   </typeAliases>
 </configuration>

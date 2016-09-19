@@ -286,6 +286,13 @@
 		    <artifactId>cxf-rt-frontend-jaxws</artifactId>
 		    <version>3.1.7</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http -->
+		<dependency>
+		    <groupId>org.apache.cxf</groupId>
+		    <artifactId>cxf-rt-transports-http</artifactId>
+		    <version>3.1.7</version>
+		</dependency>
+		
 		
 	</dependencies>
 </project>

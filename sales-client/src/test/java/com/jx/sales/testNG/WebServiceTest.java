@@ -10,7 +10,7 @@ public class WebServiceTest extends BaseTestNG{
   @Test
   public void testWebService() {
 	  IDictWebservice custserv=(IDictWebservice) getCtx().getBean("dictClient");
-	  String a=custserv.test("姜叙");
+	  String a=custserv.test("hello");
 	  System.out.println(a);
   }
 }

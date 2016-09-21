@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1898" started-at="2016-09-20T14:27:01Z" finished-at="2016-09-20T14:27:03Z">
+  <suite name="Suite" duration-ms="998" started-at="2016-09-21T00:29:53Z" finished-at="2016-09-21T00:29:54Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1898" started-at="2016-09-20T14:27:01Z" finished-at="2016-09-20T14:27:03Z">
+    <test name="Test" duration-ms="998" started-at="2016-09-21T00:29:53Z" finished-at="2016-09-21T00:29:54Z">
       <class name="com.jx.sales.testNG.WebServiceTest">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="beforeSuite" is-config="true" duration-ms="2514" started-at="2016-09-20T22:26:58Z" finished-at="2016-09-20T22:27:01Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="beforeSuite" is-config="true" duration-ms="1229" started-at="2016-09-21T08:29:51Z" finished-at="2016-09-21T08:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-09-20T22:27:01Z" finished-at="2016-09-20T22:27:01Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="beforeTest" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:53Z" finished-at="2016-09-21T08:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="beforeClass" is-config="true" duration-ms="0" started-at="2016-09-20T22:27:01Z" finished-at="2016-09-20T22:27:01Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="beforeClass" is-config="true" duration-ms="1" started-at="2016-09-21T08:29:53Z" finished-at="2016-09-21T08:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2016-09-20T22:27:01Z" finished-at="2016-09-20T22:27:01Z">
+        <test-method status="PASS" signature="testFindDictByCodeAndType()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="testFindDictByCodeAndType" duration-ms="988" started-at="2016-09-21T08:29:53Z" finished-at="2016-09-21T08:29:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindDictByCodeAndType -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:53Z" finished-at="2016-09-21T08:29:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeMethod -->
-        <test-method status="PASS" signature="testWebService()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="testWebService" duration-ms="1877" started-at="2016-09-20T22:27:01Z" finished-at="2016-09-20T22:27:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testWebService -->
-        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2016-09-20T22:27:03Z" finished-at="2016-09-20T22:27:03Z">
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:54Z" finished-at="2016-09-21T08:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AfterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-09-20T22:27:03Z" finished-at="2016-09-20T22:27:03Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="afterClass" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:54Z" finished-at="2016-09-21T08:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="afterTest" is-config="true" duration-ms="1" started-at="2016-09-20T22:27:03Z" finished-at="2016-09-20T22:27:03Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:54Z" finished-at="2016-09-21T08:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@31a5c39e]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-09-20T22:27:03Z" finished-at="2016-09-20T22:27:03Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.jx.sales.testNG.WebServiceTest@59494225]" name="afterSuite" is-config="true" duration-ms="0" started-at="2016-09-21T08:29:54Z" finished-at="2016-09-21T08:29:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

@@ -8,6 +8,6 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
        http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
     
-    <jaxws:client id="dictClient"   serviceClass="com.jx.sales.webservice.IDictWebservice" address="http://localhost/sales-manager/cxf/dictwebs" />
+    <jaxws:client id="dictClient"   serviceClass="com.jx.sales.webservice.IDictWebservice" address="http://localhost:8888/sales-manager/cxf/dictwebs" />
     
 </beans>

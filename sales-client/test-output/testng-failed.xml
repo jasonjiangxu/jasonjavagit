@@ -5,7 +5,7 @@
     <classes>
       <class name="com.jx.sales.testNG.WebServiceTest">
         <methods>
-          <include name="testWebService"/>
+          <include name="testFindDictByCodeAndType"/>
         </methods>
       </class> <!-- com.jx.sales.testNG.WebServiceTest -->
     </classes>

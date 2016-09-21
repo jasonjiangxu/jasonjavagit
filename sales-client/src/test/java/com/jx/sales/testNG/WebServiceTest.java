@@ -13,4 +13,12 @@ public class WebServiceTest extends BaseTestNG{
 	  String a=custserv.test("hello");
 	  System.out.println(a);
   }
+  
+  @Test
+  public void testFindDictByCodeAndType() {
+	  IDictWebservice custserv=(IDictWebservice) getCtx().getBean("dictClient");
+	  String a=custserv.findDictByCodeAndType("10054002","10010");
+	  System.out.println(a);
+  }
+  
 }

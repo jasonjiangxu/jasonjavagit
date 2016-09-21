@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.jx.manager.mapper.DicgMapper" >
+<mapper namespace="com.jx.manager.mapper.DictMapper" >
   <resultMap id="dictMap" type="tdict" >
      <id column="C_ID" property="id" jdbcType="VARCHAR" />
      <result column="C_REMARK" property="remark" jdbcType="VARCHAR" />
@@ -56,17 +56,17 @@
   </update>
   
    <!-- 查询菜单 -->
-  <select id="findDictByCodeAndType" resultMap="custMap">
+  <select id="findDictByCodeAndType" resultMap="dictMap">
   		select  <include refid="columnlist"/> 
   		from T_DICT where C_CODE=#{code,jdbcType=VARCHAR} AND C_TYPE=#{type,jdbcType=VARCHAR} AND C_DEL='N' 
   </select>
   
-  <select id="findDictByType" resultMap="custMap">
+  <select id="findDictByType" resultMap="dictMap">
   		select  <include refid="columnlist"/> 
   		from T_DICT where  C_TYPE=#{type,jdbcType=VARCHAR} AND C_DEL='N' 
   </select>
   
-   <select id="findDictLikeNameOrPy" resultMap="custMap">
+   <select id="findDictLikeNameOrPy" resultMap="dictMap">
   		select  <include refid="columnlist"/> 
   		from T_DICT where (C_NAME LIKE '%${nameOrPy}%' OR C_SPELL LIKE '%${nameOrPy}%') AND C_DEL='N' 
   </select>
